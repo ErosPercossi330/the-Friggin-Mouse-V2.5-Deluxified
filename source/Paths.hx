@@ -1,5 +1,4 @@
 package;
-
 import flxanimate.FlxAnimate;
 import animateatlas.AtlasFrameMaker;
 import flixel.math.FlxPoint;
@@ -525,6 +524,7 @@ class Paths
 	}
 	#end
 	
+	#if flxanimate
 	public static function loadAnimateAtlas(spr:FlxAnimate, folderOrImg:Dynamic, spriteJson:Dynamic = null, animationJson:Dynamic = null)
 	{
 		var changedAnimJson = false;
@@ -593,4 +593,5 @@ class Paths
 		//trace(animationJson);
 		spr.loadAtlasEx(folderOrImg, spriteJson, animationJson);
 	}
+	#end
 }
