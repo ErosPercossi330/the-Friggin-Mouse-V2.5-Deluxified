@@ -16,7 +16,6 @@ import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.display.FlxPieDial;
 import Controls;
-import StorageUtil;
 
 #if hxvlc
 import hxvlc.flixel.FlxVideoSprite;
@@ -59,13 +58,10 @@ class VideoSprite extends FlxSpriteGroup {
 			add(cover);
 		}
 
-		// initialize sprites
 		videoSprite = new FlxVideoSprite();
-        
         #if (psychEngineVersion >= "0.7.0")
         videoSprite.antialiasing = ClientPrefs.globalAntialiasing;
         #else
-        // If this still errors, just set it to true manually
         videoSprite.antialiasing = true; 
         #end
         
@@ -73,9 +69,7 @@ class VideoSprite extends FlxSpriteGroup {
         if(canSkip) this.canSkip = true;
 
         #if hxvlc
-        // FIX: hxvlc uses 'events' or 'mediaPlayer' now
         videoSprite.bitmap.onEndReached.add(finishVideo);
-
         videoSprite.bitmap.onFormatSetup.add(function()
         {
             videoSprite.setGraphicSize(FlxG.width);
