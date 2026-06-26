@@ -12,7 +12,7 @@ import android.callback.CallBack;
  * A storage class for mobile.
  * @author Mihai Alexandru (M.A. Jigsaw)
  */
-class StorageUtil
+class SUtil
 {
 	#if sys
 	// root directory, used for handling the saved storage type and path
