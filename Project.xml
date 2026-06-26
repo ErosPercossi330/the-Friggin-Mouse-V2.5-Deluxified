@@ -51,7 +51,6 @@
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="TITLE_SCREEN_EASTER_EGG" if="officialBuild"/> <!-- DELETE THE if="officialBuild" for enabling this on an unofficial build -->
 	<define name="CRASH_HANDLER" if="desktop release || android || ios" />
-	<define name="flxanimate" unless="desktop release || android || ios" />
 	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
 	<assets path="assets/preload" rename="assets" exclude="*.mp3"  unless="web"/>
 	<section if="TITLE_SCREEN_EASTER_EGG">
@@ -123,6 +122,8 @@
 	<assets path="assets/fonts" />
 	<!-- _______________________________ Libraries ______________________________ -->
 
+	<haxelib name="lime" />
+	<haxelib name="openfl" />
 	<haxelib name="flixel" />
 	<haxedev set='webgl' />
 
@@ -135,7 +136,7 @@
 	<haxelib name="flixel-ui" />
 	<haxelib name="linc_luajit" if="LUA_ALLOWED"/>
 	<haxelib name="hxvlc" if="VIDEOS_ALLOWED"/> 
-    <haxelib name="flxanimate" if="mobile"/>
+    <haxelib name="flxanimate" />
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>	
