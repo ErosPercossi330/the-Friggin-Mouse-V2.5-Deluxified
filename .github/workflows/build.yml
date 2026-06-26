@@ -66,12 +66,13 @@ jobs:
       - name: Install Libraries
         run: |
             haxelib install hmm
+            haxelib run hmm setup
             haxelib run hmm install --quiet
 
       - name: Configure Libs
         run: |
             haxelib set lime git
-            haxelib set openfl 9.1.0
+            haxelib set openfl 9.2.2
             haxelib set flixel 5.2.2
             haxelib set flixel-addons 2.11.0
             haxelib set flixel-ui 2.4.0

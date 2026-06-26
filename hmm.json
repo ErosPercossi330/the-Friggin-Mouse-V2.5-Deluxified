@@ -29,10 +29,10 @@
       "version": "2.11.0"
     },
     {
-            "name":"flixel-tools",
-            "type":"haxelib",
-            "version":null
-        },
+      "name":"flixel-tools",
+      "type":"haxelib",
+      "version":null
+    },
     {
       "name": "flixel-ui",
       "type": "haxelib",
@@ -46,7 +46,7 @@
     {
       "name": "hxvlc",
       "type": "haxelib",
-      "version": "1.8.1"
+      "version": "1.9.0"
     },
     {
       "name": "hxcpp",
@@ -58,7 +58,7 @@
       "name": "lime",
       "type": "git",
       "ref": "main",
-      "url": "https://github.com/Ethantobot11/lime2"
+      "url": "https://github.com/Prohack202020/lime"
     },
     {
       "name": "flxanimate",
