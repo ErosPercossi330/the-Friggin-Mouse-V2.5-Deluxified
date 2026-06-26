@@ -78,7 +78,7 @@ import android.FlxVirtualPad;
 #end
 
 #if VIDEOS_ALLOWED
-import hxvlc.flixel.FlxVideoSprite as VideoSprite;
+import VideoSprite;
 #end
 
 using StringTools;
