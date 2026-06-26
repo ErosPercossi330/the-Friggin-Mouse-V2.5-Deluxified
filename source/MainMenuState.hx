@@ -208,7 +208,7 @@ class MainMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new TitleState());
 			}
-			
+			#if mobile
 			if (_virtualpad.buttonM.justPressed)
 			{
 				selectedSomethin = true;
@@ -220,7 +220,7 @@ class MainMenuState extends MusicBeatState
 				selectedSomethin = true;
 				MusicBeatState.switchState(new CreditsState());
 			}
-
+			#end
 			if (controls.ACCEPT)
 			{
 				if (optionShit[curSelected] == 'donate')

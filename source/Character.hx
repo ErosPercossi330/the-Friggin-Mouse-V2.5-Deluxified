@@ -1,5 +1,5 @@
 package;
-
+import flxanimate.FlxAnimate;
 import flixel.util.FlxDestroyUtil;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -122,7 +122,7 @@ class Character extends FlxSprite
 				isAnimateAtlas = false;
         
         		#if flxanimate
-        		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT, null, true);
+        		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT, null);
         		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
         			isAnimateAtlas = true;
 				#end

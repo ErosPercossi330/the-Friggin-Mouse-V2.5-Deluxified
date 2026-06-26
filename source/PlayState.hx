@@ -78,7 +78,7 @@ import android.FlxVirtualPad;
 #end
 
 #if VIDEOS_ALLOWED
-import vlc.MP4Handler;
+import hxvlc.flixel.FlxVideoSprite as VideoSprite;
 #end
 
 using StringTools;
@@ -332,6 +332,11 @@ class PlayState extends MusicBeatState
 
 	var precacheList:Map<String, String> = new Map<String, String>();
 	
+	//Eros HUD ?
+	public static var HUD:FlxSprite;
+	//lame name cuz idk
+	public var ratingsSprite:FlxSprite;
+
 	// stores the last judgement object
 	public static var lastRating:FlxSprite;
 	// stores the last combo sprite object
@@ -1189,12 +1194,37 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
+		ratingsSprite = new FlxSprite(992.1, 435.2);
+		ratingsSprite.frames = Paths.getSparrowAtlas('ratings'); 
+
+		ratingsSprite.animation.addByPrefix('PLUS', 'PLUS', 24, false);
+		ratingsSprite.animation.addByPrefix('S', 'S', 24, false);
+		ratingsSprite.animation.addByPrefix('A', 'A', 24, false);
+		ratingsSprite.animation.addByPrefix('B', 'B', 24, false);
+		ratingsSprite.animation.addByPrefix('C', 'C', 24, false);
+		ratingsSprite.animation.addByPrefix('D', 'D', 24, false);
+		ratingsSprite.animation.addByPrefix('E', 'E', 24, false);
+		ratingsSprite.animation.addByPrefix('F', 'F', 24, false);
+		ratingsSprite.animation.addByPrefix('?', '?', 24, false);
+
+		ratingsSprite.scrollFactor.set(0, 0);
+		ratingsSprite.scale.set(0.8, 0.8);
+		ratingsSprite.updateHitbox();
+		ratingsSprite.cameras = [camHUD];
+
+		ratingsSprite.animation.play('?');
+		add(ratingsSprite);
+
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
 		botplayTxt.visible = cpuControlled;
 		add(botplayTxt);
+
+		HUD = new FlxSprite(0).loadGraphic(Paths.image('HUD'));
+		add(HUD);
+
 		if(ClientPrefs.downScroll) {
 			botplayTxt.y = timeBarBG.y - 78;
 		}
@@ -1640,13 +1670,25 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		var video:MP4Handler = new MP4Handler();
-		video.playVideo(filepath);
-		video.finishCallback = function()
+		var video:VideoSprite = new VideoSprite();
+		add(video);
+		video.load(filepath);
+		video.play();
+		video.cameras = [camHUD];
+		video.alpha = 1;
+		video.visible = true;
+		video.bitmap.onFormatSetup.add(function()
 		{
+			video.setGraphicSize(FlxG.width, FlxG.height);
+			video.updateHitbox();
+			video.screenCenter();
+		});
+		video.bitmap.onEndReached.add(function()
+		{
+			video.destroy();
 			startAndEnd();
 			return;
-		}
+		});
 		#else
 		FlxG.log.warn('Platform not supported!');
 		startAndEnd();
@@ -3463,7 +3505,9 @@ class PlayState extends MusicBeatState
 
     function addDPad()
 	{
+		#if mobile
 		addVirtualPad(FULL, NONE);
+		#end
 	}
 
     function openOptionsMenu()
@@ -5168,6 +5212,27 @@ class PlayState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
+
+		if (curBeat % 2 == 0 && ratingsSprite != null)
+    	{
+			if (ratingPercent >= 1) {
+				ratingsSprite.animation.play('PLUS', true);
+			} else if (ratingPercent >= 0.98) {
+				ratingsSprite.animation.play('S', true);
+			} else if (ratingPercent >= 0.90) {
+				ratingsSprite.animation.play('A', true);
+			} else if (ratingPercent >= 0.80) {
+				ratingsSprite.animation.play('B', true);
+			} else if (ratingPercent >= 0.70) {
+				ratingsSprite.animation.play('C', true);
+			} else if (ratingPercent >= 0.50) {
+				ratingsSprite.animation.play('D', true);
+			} else if (ratingPercent >= 0.21) {
+				ratingsSprite.animation.play('E', true);
+			} else if (ratingPercent <= 0.20 && ratingsSprite.animation.curAnim.name != '?') {
+				ratingsSprite.animation.play('F', true);
+			}
+    	}
 
 		if(lastBeatHit >= curBeat) {
 			//trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
