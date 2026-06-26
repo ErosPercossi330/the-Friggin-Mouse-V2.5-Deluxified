@@ -130,6 +130,7 @@ class StorageUtil
 		}
 	}
 
+	#if android
 	public static function checkExternalPaths(?splitStorage = false):Array<String>
 	{
 		var process = new Process('grep -o "/storage/....-...." /proc/mounts | paste -sd \',\'');
@@ -149,6 +150,7 @@ class StorageUtil
 		daPath = haxe.io.Path.addTrailingSlash(daPath.endsWith("\n") ? daPath.substr(0, daPath.length - 1) : daPath);
 		return daPath;
 	}
+	#end
 	#end
 	#end
 }

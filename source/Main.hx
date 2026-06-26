@@ -12,6 +12,10 @@ import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import lime.app.Application;
 
+#if mobile
+import CopyState;
+#end
+
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -53,7 +57,12 @@ class Main extends Sprite
 	{
 		super();
 
-    SUtil.gameCrashCheck();
+    #if mobile
+	#if android
+	StorageUtil.requestPermissions();
+	#end
+	Sys.setCwd(StorageUtil.getStorageDirectory());
+	#end
 
 	#if VIDEOS_ALLOWED
 	hxvlc.util.Handle.init(#if (hxvlc >= "1.8.0")  ['--no-lua'] #end);
