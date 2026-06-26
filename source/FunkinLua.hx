@@ -57,7 +57,7 @@ import hscript.Expr;
 import Discord;
 #end
 
-#if mobile
+#if android
 import android.Hardware;
 #end
 
