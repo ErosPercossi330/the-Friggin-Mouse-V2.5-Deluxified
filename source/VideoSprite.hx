@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxSprite;
 import flixel.addons.display.FlxPieDial;
 import flixel.group.FlxSpriteGroup;
 
@@ -9,6 +10,11 @@ import hxvlc.flixel.FlxVideoSprite;
 
 class VideoSprite extends FlxSpriteGroup {
 	#if VIDEOS_ALLOWED
+	public var bitmap(get, never):Dynamic;
+	private function get_bitmap() return videoSprite.bitmap;
+	public function load(name:String, ?options:Dynamic) {
+    videoSprite.load(videoName, shouldLoop ? ['input-repeat=65545'] : null);
+    }
 	public var finishCallback:Void->Void = null;
 	public var onSkip:Void->Void = null;
 
@@ -42,7 +48,7 @@ class VideoSprite extends FlxSpriteGroup {
 
 		// initialize sprites
 		videoSprite = new FlxVideoSprite();
-		videoSprite.antialiasing = ClientPrefs.data.antialiasing;
+		videoSprite.antialiasing = ClientPrefs.globalAntialiasing;
 		add(videoSprite);
 		if(canSkip) this.canSkip = true;
 
