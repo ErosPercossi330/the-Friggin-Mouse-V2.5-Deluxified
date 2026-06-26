@@ -38,7 +38,7 @@ using StringTools;
 class HitboxSettingsSubState extends BaseOptionsMenu
 {
     /*
-    #if android
+    #if mobile
 	final lastStorageType:String = ClientPrefs.storageType;
 	#end
 	*/
@@ -115,7 +115,7 @@ class HitboxSettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 		
-		#if android
+		#if mobile
 		var option:Option = new Option('Storage Type:',
 			"Which folder Psych Engine should use?\n(CHANGING THIS MAKES DELETE YOUR OLD FOLDER!!)",
 			'storageType',
@@ -140,7 +140,7 @@ class HitboxSettingsSubState extends BaseOptionsMenu
 	override public function destroy() {
 		super.destroy();
 		/*
-		#if android
+		#if mobile
 		if (ClientPrefs.storageType != lastStorageType) {
 		    onStorageChange();
 		}
@@ -159,7 +159,7 @@ class HitboxSettingsSubState extends BaseOptionsMenu
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-			#if android
+			#if mobile
 		if (FlxG.android.justReleased.BACK)
 		{
 			FlxTransitionableState.skipNextTransIn = true;

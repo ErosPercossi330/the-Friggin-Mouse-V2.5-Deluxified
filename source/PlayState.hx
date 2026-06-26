@@ -72,7 +72,7 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 
-#if android
+#if mobile
 import flixel.input.actions.FlxActionInput;
 import android.FlxVirtualPad;
 #end
@@ -1244,7 +1244,7 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 
-		#if android
+		#if mobile
 		addAndroidControls();
 	        if (ClientPrefs.hitboxmode == 'Classic') {
 		MusicBeatState.androidc.visible = false;
@@ -2169,7 +2169,7 @@ class PlayState extends MusicBeatState
 			callOnLuas('onStartCountdown', []);
 			return;
 		}
-         #if android
+         #if mobile
 			MusicBeatState.androidc.visible = true;
 			if (checkHitbox != true) MusicBeatState.androidc.alpha = 1;
 			//
@@ -2893,7 +2893,7 @@ class PlayState extends MusicBeatState
 			paused = false;
 			callOnLuas('onResume', []);
 			
-			#if android
+			#if mobile
 			MusicBeatState.androidc.y = 0;
 			//MusicBeatState.androidc.visible = true;
 			#end
@@ -3174,7 +3174,7 @@ class PlayState extends MusicBeatState
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
-		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
+		if (controls.PAUSE #if mobile || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', [], false);
 			if(ret != FunkinLua.Function_Stop) {
@@ -3491,7 +3491,7 @@ class PlayState extends MusicBeatState
 			FlxG.sound.music.pause();
 			vocals.pause();
 		}
-		#if android
+		#if mobile
 			MusicBeatState.androidc.y = 720;
 			//MusicBeatState.androidc.visible = true;
 			#end
@@ -4089,7 +4089,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		#if android
+		#if mobile
 		if (ClientPrefs.hitboxmode == 'New' && !ClientPrefs.hitboxhint) {
 		MusicBeatState.androidc.alpha = 0.00001;
 		}

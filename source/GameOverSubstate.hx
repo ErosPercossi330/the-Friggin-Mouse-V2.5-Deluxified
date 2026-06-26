@@ -9,7 +9,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
-#if android
+#if mobile
 import android.Hardware;
 #end
 
@@ -62,7 +62,7 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 
-		#if android
+		#if mobile
 		if(ClientPrefs.vibration)
 		{
 			Hardware.vibrate(vibrationTime);
@@ -82,7 +82,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		camFollowPos.setPosition(FlxG.camera.scroll.x + (FlxG.camera.width / 2), FlxG.camera.scroll.y + (FlxG.camera.height / 2));
 		add(camFollowPos);
 
-		#if android
+		#if mobile
 		addVirtualPad(NONE, A_B);
 		addPadCamera();
 		#end
