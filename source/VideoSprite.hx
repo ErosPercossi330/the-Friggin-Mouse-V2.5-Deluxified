@@ -14,7 +14,6 @@ import flixel.tweens.FlxTween;
 import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.display.FlxPieDial;
-import Controls;
 
 #if hxvlc
 import hxvlc.flixel.FlxVideoSprite;
@@ -22,7 +21,9 @@ import hxvlc.flixel.FlxVideoSprite;
 
 class VideoSprite extends FlxSpriteGroup {
 	#if VIDEOS_ALLOWED
+	private var videoName:String;
 	public var bitmap(get, never):Dynamic;
+	public var shouldLoop:Dynamic;
 	private function get_bitmap() return videoSprite.bitmap;
 	public function load(name:String, ?options:Dynamic) { videoSprite.load(videoName, shouldLoop ? ['input-repeat=65545'] : null); }
 	public var finishCallback:Dynamic = null;
@@ -34,8 +35,7 @@ class VideoSprite extends FlxSpriteGroup {
 	public var skipSprite:FlxPieDial;
 	public var cover:FlxSprite;
 	public var canSkip(default, set):Bool = false;
-
-	private var videoName:String;
+	
 
 	public var waiting:Bool = false;
 
@@ -126,11 +126,7 @@ class VideoSprite extends FlxSpriteGroup {
 			#if mobile
 			pressedSkip = FlxG.touches.list.length > 0 || FlxG.keys.justPressed.ENTER;
 			#else
-			try {
-				pressedSkip = Controls.ACCEPT;
-			} catch(e:Dynamic) {
-				pressedSkip = FlxG.keys.justPressed.ENTER;
-			}
+			pressedSkip = FlxG.keys.justPressed.ENTER;
 			#end
 
 			if(pressedSkip)

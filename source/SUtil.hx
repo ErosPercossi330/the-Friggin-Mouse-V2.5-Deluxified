@@ -5,9 +5,8 @@ import haxe.io.Path;
 import haxe.Exception;
 
 #if sys
-import sys.FileSystem;
-import sys.io.File;
-import sys.io.Procces;
+import sys.*;
+import sys.io.*;
 #end
 
 #if android

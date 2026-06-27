@@ -903,7 +903,11 @@ class PlayState extends MusicBeatState
 		{
 			if(FileSystem.exists(folder))
 			{
-				for (file in FileSystem.readDirectory(folder))
+				#if (android || linux || ios)
+				for (file in CoolUtil.sortAlphabetically(Paths.readDirectory(folder)))
+				#else
+				for (file in Paths.readDirectory(folder))
+				#end
 				{
 					if(file.endsWith('.lua') && !filesPushed.contains(file))
 					{
@@ -1303,7 +1307,11 @@ class PlayState extends MusicBeatState
 		{
 			if(FileSystem.exists(folder))
 			{
-				for (file in FileSystem.readDirectory(folder))
+				#if (android || linux || ios)
+				for (file in CoolUtil.sortAlphabetically(Paths.readDirectory(folder)))
+				#else
+				for (file in Paths.readDirectory(folder))
+				#end
 				{
 					if(file.endsWith('.lua') && !filesPushed.contains(file))
 					{
@@ -3135,9 +3143,9 @@ class PlayState extends MusicBeatState
 		        + maxNPS
 		        + ")"
 		        + " | " // 	NPS
-		        + "Score: " + songScore
-		        + " | Misses: " + songMisses
-		        + " | Accuracy: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
+		        + "S: " + songScore
+		        + " | M: " + songMisses
+		        + " | A: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
 		        + " | ";
 		        
 		        if (ratingName == 'N/A'){
@@ -3174,7 +3182,7 @@ class PlayState extends MusicBeatState
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
-		if (controls.PAUSE #if mobile || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
+		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', [], false);
 			if(ret != FunkinLua.Function_Stop) {
