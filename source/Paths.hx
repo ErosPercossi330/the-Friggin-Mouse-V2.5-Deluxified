@@ -281,20 +281,22 @@ class Paths
 		#if MODS_ALLOWED
 		if(FileSystem.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
 			return true;
-		#if (android || linux || ios)
-		else if (FileSystem.exists(findFile(key)))
-			return true;
-		#end
 		}
+		#if (android || linux || ios)
+		else if (FileSystem.exists(findFile(key))) {
+			return true;
+		}
+		#end
 		#end
 
 		if(OpenFlAssets.exists(getPath(key, type))) {
 			return true;
-		#if (android || linux || ios)
-		else if (FileSystem.exists(findFile(key, type)))
-			return true;
-		#end
 		}
+		#if (android || linux || ios)
+		else if (FileSystem.exists(findFile(key, type))) {
+			return true;
+		}
+		#end
 		return false;
 	}
 
@@ -468,20 +470,23 @@ class Paths
 			var fileToCheck:String = mods(currentModDirectory + '/' + key);
 			if(FileSystem.exists(fileToCheck)) {
 				return fileToCheck;
-			#if (android || linux || ios)
-			else if (FileSystem.exists(findFile(fileToCheck)))
-				return true;
-			#end
 			}
+			#if (android || linux || ios)
+			else if (FileSystem.exists(findFile(fileToCheck))) {
+				return true;
+			}
+			#end
 		}
 
 		for(mod in getGlobalMods()){
 			var fileToCheck:String = mods(mod + '/' + key);
-			if(FileSystem.exists(fileToCheck))
+			if(FileSystem.exists(fileToCheck)) {
 				return fileToCheck;
+			}
 			#if (android || linux || ios)
-			else if (FileSystem.exists(findFile(fileToCheck)))
+			else if (FileSystem.exists(findFile(fileToCheck))) {
 				return true;
+			}
 			#end
 
 		}
