@@ -469,7 +469,7 @@ class Paths
 				return fileToCheck;
 
 		}
-		return if (ClientPrefs.Modpack) SUtil.ggetStorageDirectoryetPath() + 'modpack/' + key; else SUtil.getStorageDirectory() + 'mods/' + key;
+		return if (ClientPrefs.Modpack) SUtil.getStorageDirectory() + 'modpack/' + key; else SUtil.getStorageDirectory() + 'mods/' + key;
 	}
 
 	public static var globalMods:Array<String> = [];

@@ -145,10 +145,26 @@ class CoolUtil
 		so Base Psych saves won't conflict with yours
 		@BeastlyGabi
 	**/
-	public static function getSavePath(folder:String = 'ShadowMario'):String {
+	public static function getSavePath(folder:String = 'Friggin Mouse Deluxiefied'):String {
 		@:privateAccess
 		return #if (flixel < "5.0.0") folder #else FlxG.stage.application.meta.get('company')
 			+ '/'
 			+ FlxSave.validate(FlxG.stage.application.meta.get('file')) #end;
+	}
+
+	inline public static function colorFromString(color:String):FlxColor
+	{
+		var hideChars = ~/[\t\n\r]/;
+		var color:String = hideChars.split(color).join('').trim();
+		if(color.startsWith('0x')) color = color.substring(color.length - 6);
+
+		var colorNum:Null<FlxColor> = FlxColor.fromString(color);
+		if(colorNum == null) colorNum = FlxColor.fromString('#$color');
+		return colorNum != null ? colorNum : FlxColor.WHITE;
+	}
+	
+	public static function showPopUp(message:String, title:String):Void
+	{
+		FlxG.stage.window.alert(message, title);
 	}
 }

@@ -127,7 +127,7 @@ class VideoSprite extends FlxSpriteGroup {
 			pressedSkip = FlxG.touches.list.length > 0 || FlxG.keys.justPressed.ENTER;
 			#else
 			try {
-				pressedSkip = Controls.instance.ACCEPT;
+				pressedSkip = Controls.ACCEPT;
 			} catch(e:Dynamic) {
 				pressedSkip = FlxG.keys.justPressed.ENTER;
 			}
