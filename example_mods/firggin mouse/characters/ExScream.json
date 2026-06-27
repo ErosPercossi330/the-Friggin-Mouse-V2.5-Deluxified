@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				1
+			],
+			"indices": [],
+			"fps": 40,
+			"anim": "idle",
+			"loop": true,
+			"name": "Scream"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ExAngy",
+	"position": [
+		-50,
+		-160
+	],
+	"healthicon": "ExAngy",
+	"flip_x": false,
+	"healthbar_colors": [
+		60,
+		100,
+		255
+	],
+	"camera_position": [
+		0,
+		150
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginmousebetrayal.png"><SubTexture name="thefrigginmousebetrayal idle0000" x="1104" y="0" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal idle0001" x="1104" y="531" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal idle0002" x="0" y="1064" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal idle0003" x="551" y="1064" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingRIGHT0000" x="1102" y="1064" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingRIGHT0001" x="1655" y="0" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingRIGHT Miss0000" x="1655" y="531" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingRIGHT Miss0001" x="1655" y="1062" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingLEFT0000" x="0" y="1595" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingLEFT0001" x="551" y="1595" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingLEFT Miss0000" x="1102" y="1595" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingLEFT Miss0001" x="1653" y="1595" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingUP0000" x="2206" y="0" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingUP0001" x="2206" y="531" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingUP Miss0000" x="2206" y="1062" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingUP Miss0001" x="2206" y="1593" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingDOWN0000" x="0" y="2126" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingDOWN0001" x="551" y="2126" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingDOWN Miss0000" x="1102" y="2126" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal SingDOWN Miss0001" x="1653" y="2126" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal dies0000" x="0" y="0" width="552" height="532" frameX="0" frameY="0" frameWidth="552" frameHeight="532" />
+<SubTexture name="thefrigginmousebetrayal dies0001" x="552" y="0" width="552" height="532" frameX="0" frameY="0" frameWidth="552" frameHeight="532" />
+<SubTexture name="thefrigginmousebetrayal dies0002" x="0" y="532" width="552" height="532" frameX="0" frameY="0" frameWidth="552" frameHeight="532" />
+<SubTexture name="thefrigginmousebetrayal dies0003" x="552" y="532" width="552" height="532" frameX="0" frameY="0" frameWidth="552" frameHeight="532" />
+<SubTexture name="thefrigginmousebetrayal confirmed0000" x="2204" y="2126" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal confirmed0001" x="2757" y="0" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal confirmed0002" x="2757" y="531" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+<SubTexture name="thefrigginmousebetrayal confirmed0003" x="2757" y="1062" width="551" height="531" frameX="0" frameY="0" frameWidth="551" frameHeight="531" />
+</TextureAtlas>

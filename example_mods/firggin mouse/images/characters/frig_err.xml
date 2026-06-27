@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frig_err.png"><SubTexture name="frig_err idle0000" x="0" y="0" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err idle0001" x="553" y="0" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingRIGHT0000" x="0" y="532" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingRIGHT0001" x="553" y="532" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingLEFT0000" x="1106" y="0" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingLEFT0001" x="1106" y="532" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingUP0000" x="0" y="1064" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingUP0001" x="553" y="1064" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingDOWN0000" x="1106" y="1064" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+<SubTexture name="frig_err SingDOWN0001" x="1659" y="0" width="553" height="532" frameX="0" frameY="0" frameWidth="553" frameHeight="532" />
+</TextureAtlas>

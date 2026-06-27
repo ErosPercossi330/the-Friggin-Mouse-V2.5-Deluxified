@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="dumbfrick.png"><SubTexture name="dumbfrick idle0000" x="0" y="0" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick idle0001" x="536" y="0" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick idle0002" x="0" y="485" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick idle0003" x="536" y="485" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick idle0004" x="1072" y="0" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick idle0005" x="1072" y="485" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingLEFT0000" x="0" y="970" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingLEFT0001" x="536" y="970" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingRIGHT0000" x="1072" y="970" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingRIGHT0001" x="1608" y="0" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingUP0000" x="1608" y="485" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingUP0001" x="1608" y="970" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingDOWN0000" x="0" y="1455" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick SingDOWN0001" x="536" y="1455" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick miss0000" x="1072" y="1455" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick miss0001" x="1608" y="1455" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick hey0000" x="2144" y="0" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick hey0001" x="2144" y="485" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+<SubTexture name="dumbfrick die0000" x="2144" y="970" width="536" height="485" frameX="0" frameY="0" frameWidth="536" frameHeight="485" />
+</TextureAtlas>

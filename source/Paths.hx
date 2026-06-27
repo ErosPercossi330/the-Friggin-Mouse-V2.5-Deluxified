@@ -281,22 +281,22 @@ class Paths
 		#if MODS_ALLOWED
 		if(FileSystem.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
 			return true;
-		}
 		#if (android || linux || ios)
+		}
 		else if (FileSystem.exists(findFile(key))) {
 			return true;
-		}
 		#end
+		}
 		#end
 
 		if(OpenFlAssets.exists(getPath(key, type))) {
 			return true;
-		}
 		#if (android || linux || ios)
+		}
 		else if (FileSystem.exists(findFile(key))) {
 			return true;
-		}
 		#end
+		}
 		return false;
 	}
 

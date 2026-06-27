@@ -1,0 +1,137 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i see how this shit is goin'."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yeh"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "you just like to piss me off, do ya?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yes"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "well FUCK YOU, BITCH!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I HOPE YOU FUCKING DIE AND GO TO HELL!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU FUCKING SICK BASTARD!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU FUCKING IDIOT!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU SHITLORD!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "lol"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU! :face_with_symbols_over_mouth:"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "FUCK YOUR FUCKING GAME! IT'S FUCKING TRASH!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "a"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU YOU!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "fuk u"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "NO FUCK YOU!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "OK ENOUGH TALK LET'S JUST FUCKING SING BEFORE I GET MORE PISSED OFF!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok"
+		},
+		{
+			"speed": 0.025,
+			"portrait": "thefrigginangrymouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU!"
+		}
+	]
+}

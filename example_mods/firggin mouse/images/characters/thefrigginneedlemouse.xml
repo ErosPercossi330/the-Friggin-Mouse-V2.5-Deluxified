@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginneedlemouse.png"><SubTexture name="thefrigginneedlemouse idle0000" x="0" y="0" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse idle0001" x="503" y="0" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse idle0002" x="0" y="454" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse idle0003" x="503" y="454" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse idle0004" x="1006" y="0" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse idle0005" x="1006" y="454" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingRIGHT0000" x="0" y="908" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingRIGHT0001" x="503" y="908" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingLEFT0000" x="1006" y="908" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingLEFT0001" x="1509" y="0" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingUP0000" x="1509" y="454" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingUP0001" x="1509" y="908" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingDOWN0000" x="0" y="1362" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+<SubTexture name="thefrigginneedlemouse SingDOWN0001" x="503" y="1362" width="503" height="454" frameX="0" frameY="0" frameWidth="503" frameHeight="454" />
+</TextureAtlas>

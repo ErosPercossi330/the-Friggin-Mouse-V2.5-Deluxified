@@ -1,0 +1,81 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WHAT THE FUCK?!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "lol i beat your hard thing"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "HOW THE FUCK DID YOU FUCKING WIN?!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "idfk cuz imma god"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "OK Y'KNOW WHAT THAT'S IT!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'M GONNA MAKE THIS EVEN MORE HARD AS FUCKING HELL! AND YOU CAN'T STOP ME!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "ok then lol come fucking at me boi-o!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "OH I WILL YOU FRIGGITY FRACKER!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i-"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "STFU OR I'LL KILL YOU AND UR GAY-ASS BOI!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "oki"
+		}
+	]
+}

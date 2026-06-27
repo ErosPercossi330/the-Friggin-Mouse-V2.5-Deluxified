@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="elm.png"><SubTexture name="elm idle0000" x="0" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm idle0001" x="454" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm idle0002" x="0" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm idle0003" x="454" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingRIGHT0000" x="908" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingRIGHT0001" x="908" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingLEFT0000" x="0" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingLEFT0001" x="454" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingUP0000" x="908" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingUP0001" x="1362" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingDOWN0000" x="1362" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="elm SingDOWN0001" x="1362" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+</TextureAtlas>

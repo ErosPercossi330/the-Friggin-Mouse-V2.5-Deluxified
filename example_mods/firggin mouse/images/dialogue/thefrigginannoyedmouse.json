@@ -1,0 +1,24 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		210,
+		150
+	],
+	"scale": 2.35,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				-20
+			],
+			"idle_offsets": [
+				0,
+				-20
+			],
+			"loop_name": "thefrigginannoyedmouse_Dialouge talk",
+			"idle_name": "thefrigginannoyedmouse_Dialouge talk0000"
+		}
+	],
+	"image": "thefrigginannoyedmouse_Dialouge"
+}

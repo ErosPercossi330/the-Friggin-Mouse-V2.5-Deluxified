@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="upsetelm.png"><SubTexture name="upsetelm idle0000" x="0" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm idle0001" x="454" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm idle0002" x="0" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm idle0003" x="454" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingRIGHT0000" x="908" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingRIGHT0001" x="908" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingLEFT0000" x="0" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingLEFT0001" x="454" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingUP0000" x="908" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingUP0001" x="1362" y="0" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingDOWN0000" x="1362" y="433" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+<SubTexture name="upsetelm SingDOWN0001" x="1362" y="866" width="454" height="433" frameX="0" frameY="0" frameWidth="454" frameHeight="433" />
+</TextureAtlas>

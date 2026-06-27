@@ -1,0 +1,221 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep boobie tittie"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wait wtf who the fuck are you?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bap bop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wait what?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wtf are you sayin'?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i don't speak random shit"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "saufniadm"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "shaddup"
+		},
+		{
+			"speed": 0.3,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "alright where d f was i?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "boo skeedo be ban doo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "alright idk what the fuck your fucking name is so i'll just call you dumbfrick."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "ayo wtf?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i mean bayo bat ba buck?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bruh i know you just fucking talked don't fucking lie to me."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "alright fine i can fucking talk!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "damn is it me or is the dia-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "zip it"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "bitch who do you think i fucking am-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "uhhhh... a annoying bitch"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "yo you mouse stop being fucking mean to my gf!"
+		},
+		{
+			"speed": 0.025,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "stfu no one cares about you and your gf"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "okay... uh... all i wanna do is rap battle with you ok?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "why didn't you just fucking ask"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "can we just fucking get on with i-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "stfu"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "aight we good?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "... yes."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok good let's rap with a song i made."
+		}
+	]
+}

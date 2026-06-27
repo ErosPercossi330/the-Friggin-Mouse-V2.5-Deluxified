@@ -1,0 +1,57 @@
+{
+	"storyName": "wait, there's more? OOOH NOOO!",
+	"hideFreeplay": false,
+	"weekBackground": "extras",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "weekmouse2",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Laffers",
+			"laffers",
+			[
+				255,
+				255,
+				0
+			]
+		],
+		[
+			"Elm",
+			"elm",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"Chusty",
+			"spoongeboob",
+			[
+				235,
+				235,
+				113
+			]
+		],
+		[
+			"Cat",
+			"thefriggincat",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"weekName": "EXTRAS"
+}

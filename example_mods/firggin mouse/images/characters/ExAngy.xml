@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ExAngy.png">
+<SubTexture name="Idle0000" x="0" y="855" width="488" height="695" frameX="-219" frameY="-205" frameWidth="900" frameHeight="900" />
+<SubTexture name="Idle0001" x="1769" y="1550" width="512" height="554" frameX="-195" frameY="-346" frameWidth="900" frameHeight="900" />
+<SubTexture name="Idle0002" x="650" y="2235" width="489" height="357" frameX="-221" frameY="-543" frameWidth="900" frameHeight="900" />
+<SubTexture name="Idle0003" x="1165" y="1550" width="604" height="571" frameX="-225" frameY="-329" frameWidth="900" frameHeight="900" />
+<SubTexture name="Left0000" x="2143" y="687" width="492" height="686" frameX="-215" frameY="-214" frameWidth="900" frameHeight="900" />
+<SubTexture name="Left0001" x="1550" y="693" width="501" height="683" frameX="-206" frameY="-217" frameWidth="900" frameHeight="900" />
+<SubTexture name="Left0002" x="2143" y="0" width="608" height="687" frameX="-99" frameY="-213" frameWidth="900" frameHeight="900" />
+<SubTexture name="Down0000" x="666" y="1550" width="499" height="623" frameX="-222" frameY="-277" frameWidth="900" frameHeight="900" />
+<SubTexture name="Down0001" x="0" y="2235" width="650" height="442" frameX="-141" frameY="-458" frameWidth="900" frameHeight="900" />
+<SubTexture name="Down0002" x="1139" y="2235" width="836" height="258" frameX="-42" frameY="-642" frameWidth="900" frameHeight="900" />
+<SubTexture name="Up0000" x="975" y="855" width="486" height="630" frameX="-238" frameY="-270" frameWidth="900" frameHeight="900" />
+<SubTexture name="Up0001" x="550" y="0" width="488" height="712" frameX="-236" frameY="-188" frameWidth="900" frameHeight="900" />
+<SubTexture name="Up0002" x="0" y="0" width="550" height="855" frameX="-238" frameY="-45" frameWidth="900" frameHeight="900" />
+<SubTexture name="Right0000" x="488" y="855" width="487" height="693" frameX="-221" frameY="-207" frameWidth="900" frameHeight="900" />
+<SubTexture name="Right0001" x="1550" y="0" width="593" height="693" frameX="-226" frameY="-207" frameWidth="900" frameHeight="900" />
+<SubTexture name="Right0002" x="0" y="1550" width="666" height="685" frameX="-229" frameY="-215" frameWidth="900" frameHeight="900" />
+<SubTexture name="Scream0000" x="1038" y="0" width="512" height="705" frameX="-194" frameY="-176" frameWidth="900" frameHeight="900" />
+<SubTexture name="Scream0001" x="1038" y="0" width="512" height="705" frameX="-255" frameY="-195" frameWidth="900" frameHeight="900" />
+<SubTexture name="Scream0002" x="1038" y="0" width="512" height="705" frameX="-233" frameY="-160" frameWidth="900" frameHeight="900" />
+</TextureAtlas>

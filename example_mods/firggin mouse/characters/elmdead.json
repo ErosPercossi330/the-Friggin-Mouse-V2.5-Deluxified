@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "elmdead fucking dead"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 1,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "elmdead dead loop"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 1,
+			"anim": "deathConfirm",
+			"loop": true,
+			"name": "elmdead dead loop"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/elmdead",
+	"position": [
+		30,
+		230
+	],
+	"healthicon": "elm",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		60,
+		60
+	],
+	"camera_position": [
+		170,
+		-20
+	],
+	"sing_duration": 6.1,
+	"scale": 1.1
+}

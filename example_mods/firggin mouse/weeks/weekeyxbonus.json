@@ -1,0 +1,41 @@
+{
+	"storyName": "THIS is a bonus and uhhhhhhhhhhhh yeah?",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "exy",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Files",
+			"exdraw",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Nae",
+			"MarioPNG",
+			[
+				255,
+				0,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Custom Week"
+}

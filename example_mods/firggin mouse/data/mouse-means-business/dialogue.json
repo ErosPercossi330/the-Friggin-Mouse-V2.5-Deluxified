@@ -1,0 +1,165 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YO WTF WHO BROKED MY WALL IN MY FUCKING HOUSE!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "me and my gurl did lol :)"
+		},
+		{
+			"speed": 0.045,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "sup?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU 2 FUCKERS AGAIN?!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I THOUGHT YOU TWO WERE FUCKING GONE!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "IT’S BEEN LIKE ONE MONTH LATER WHILE YOU TWO GOT AWAY!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "I NEVER WANTED YOU TWO TO FUCKING RETURN!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "BUT GUESS WHAT I GOT?!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "wat?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU 2 FUCKERS RETURNING TO MY PLACE!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU 2 BROKED MY FUCKING WALL AT MY HOUSE!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "THIS HOUSE WAS VERY FUCKING EXPENSIVE!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "i came here to rap battle you again that's all."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "BY BREAKING MY MOTHERFUCKING WALL?!"
+		},
+		{
+			"speed": 0.045,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "can we just get on with it the dialouge is taking too long-"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU FUCK YOU CUZ U 2 BROKED MY FUCKING WALL!!!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "ok"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "YOU MAY BROKE MY WALL, NOW I WILL BREAK YOU 2 CUZ AFTER ALL THE SHIT YOU’VE DONE TO ME ONE MONTH LATER!"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "AND WE ARE RAPPIN AGAIN! RIGHT FUCKING HERE AND NOW!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "yay"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "all i said was yay-"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "thefrigginannoyedmouse",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "STFU AND LET'S FUCKING FIGHT!"
+		}
+	]
+}

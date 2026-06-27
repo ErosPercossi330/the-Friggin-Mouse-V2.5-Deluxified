@@ -1,0 +1,41 @@
+{
+	"storyName": "He Needs To See You",
+	"difficulties": "Easy, Normal",
+	"hideFreeplay": false,
+	"weekBackground": "exy",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"webcam declined",
+			"yex",
+			[
+				6,
+				113,
+				253
+			]
+		],
+		[
+			"eyx virus",
+			"exangy",
+			[
+				6,
+				0,
+				73
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "EYX",
+	"hiddenUntilUnlocked": false
+}

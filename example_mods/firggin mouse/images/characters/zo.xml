@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="zo.png"><SubTexture name="zo idle0000" x="0" y="0" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo idle0001" x="386" y="0" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo idle0002" x="0" y="379" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo idle0003" x="386" y="379" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingRIGHT0000" x="772" y="0" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingRIGHT0001" x="772" y="379" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingLEFT0000" x="0" y="758" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingLEFT0001" x="386" y="758" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingUP0000" x="772" y="758" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingUP0001" x="1158" y="0" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingDOWN0000" x="1158" y="379" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+<SubTexture name="zo SingDOWN0001" x="1158" y="758" width="386" height="379" frameX="0" frameY="0" frameWidth="386" frameHeight="379" />
+</TextureAtlas>

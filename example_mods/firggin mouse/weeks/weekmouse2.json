@@ -1,0 +1,49 @@
+{
+	"storyName": "Revenge! Awww Man!",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "mouse2",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "weekmouse",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Mouse Means Business",
+			"thefrigginannoyedmouse",
+			[
+				255,
+				0,
+				106
+			]
+		],
+		[
+			"Frig Off",
+			"thefrigginangrymouse",
+			[
+				195,
+				0,
+				120
+			]
+		],
+		[
+			"Musophobia",
+			"frigg",
+			[
+				135,
+				0,
+				0
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "MOUSE 2"
+}

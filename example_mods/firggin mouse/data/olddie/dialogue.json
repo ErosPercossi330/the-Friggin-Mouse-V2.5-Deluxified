@@ -1,0 +1,156 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "OKAY, YOU KNOW WHAT?!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "I'M SICK OF BEING FUCKING HAPPY!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "I WAS STUCK BEING HAPPY FOR 93 YEARS!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "NINETY, THREE, FREAKING, YEARS!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "ayo dude chill."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "ALRIGHT, I'M NOW ABOUT TO SAY THIS..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "FOCK YOU BOYFRIEND! AND YOUR GIRL TOO!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "SHE DOESN'T EVEN KNOW HOW TO REACT!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "I HOPE YOUR READY FOR THIS SONG CUZ YOUR ABOUT TO FRICKING LOSE!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "AND YOU GUESS WHAT I'M GONNA DO TO YOUR GIRL IF YOU LOSE?!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "what?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "I'M GONNA SLICE HER FUCKING MF HEAD OFF AADHUWSHDIUWSJDUINEIMDIUJ"
+		},
+		{
+			"sound": "",
+			"speed": 0.5,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "THAT'S RIGHT! YOU HEARD ME YOU SON OF A BATCH!!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "can we just fight now? your disturbing the user."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "NO! I HAVE ONE MORE SPEECH!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "angry",
+			"expression": "confused",
+			"text": "FUCK FRIDAY NIGHT FUNKIN'!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "ok now we can fight now."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "k, coolio."
+		}
+	]
+}

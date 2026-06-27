@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="TylersFrigginDoodle.png"><SubTexture name="TylersFrigginDoodle idle0000" x="0" y="0" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle idle0001" x="51" y="27" width="66" height="77" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle idle0002" x="1868" y="0" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle idle0003" x="2802" y="0" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle idle0004" x="0" y="696" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle idle0005" x="934" y="696" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle left0000" x="1868" y="696" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle left0001" x="2802" y="696" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle left0002" x="0" y="1392" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle down0000" x="934" y="1392" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle down0001" x="1868" y="1392" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle down0002" x="2802" y="1392" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle up0000" x="0" y="2088" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle up0001" x="934" y="2088" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle up0002" x="1868" y="2088" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle right0000" x="2802" y="2088" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle right0001" x="0" y="2784" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+<SubTexture name="TylersFrigginDoodle right0002" x="934" y="2784" width="934" height="696" frameX="0" frameY="0" frameWidth="934" frameHeight="696" />
+</TextureAtlas>

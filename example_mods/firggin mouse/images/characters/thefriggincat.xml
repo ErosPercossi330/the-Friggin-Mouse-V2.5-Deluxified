@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefriggincat.png"><SubTexture name="thefriggincat idle0000" x="0" y="0" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat idle0001" x="662" y="0" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat idle0002" x="0" y="461" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat idle0003" x="662" y="461" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingRIGHT0000" x="1324" y="0" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingRIGHT0001" x="1324" y="461" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingLEFT0000" x="0" y="922" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingLEFT0001" x="662" y="922" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingUP0000" x="1324" y="922" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingUP0001" x="0" y="1383" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingDOWN0000" x="662" y="1383" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+<SubTexture name="thefriggincat SingDOWN0001" x="1324" y="1383" width="662" height="461" frameX="0" frameY="0" frameWidth="662" frameHeight="461" />
+</TextureAtlas>

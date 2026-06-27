@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.15,
+			"portrait": "frigg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "oh..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "shit..."
+		},
+		{
+			"speed": 0.15,
+			"portrait": "frigg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "umm..."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "you wanna say something so we can finish this shit or...?"
+		},
+		{
+			"speed": 0.15,
+			"portrait": "frigg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"speed": 0.0699999999999999,
+			"portrait": "frigg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "time for me to steal both of your livers..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok :)"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "bf you dick"
+		}
+	]
+}

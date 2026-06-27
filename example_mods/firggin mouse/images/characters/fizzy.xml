@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="fizzy.png"><SubTexture name="fizzy idle0000" x="0" y="0" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy idle0001" x="375" y="0" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy idle0002" x="0" y="284" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy idle0003" x="375" y="284" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingRIGHT0000" x="750" y="0" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingRIGHT0001" x="750" y="284" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingLEFT0000" x="0" y="568" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingLEFT0001" x="375" y="568" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingUP0000" x="750" y="568" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingUP0001" x="1125" y="0" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingDOWN0000" x="1125" y="284" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+<SubTexture name="fizzy SingDOWN0001" x="1125" y="568" width="375" height="284" frameX="0" frameY="0" frameWidth="375" frameHeight="284" />
+</TextureAtlas>

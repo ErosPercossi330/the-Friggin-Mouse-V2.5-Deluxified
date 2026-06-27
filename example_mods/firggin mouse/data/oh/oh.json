@@ -1,0 +1,70 @@
+{
+	"song": {
+		"speed": 1,
+		"stage": "nothingness",
+		"player1": "nothing",
+		"player2": "nothing",
+		"events": [
+			[
+				0,
+				[
+					[
+						"Image Flash",
+						"Black",
+						"99"
+					]
+				]
+			]
+		],
+		"notes": [
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						0,
+						1,
+						0
+					],
+					[
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						2,
+						0
+					],
+					[
+						0,
+						3,
+						0
+					]
+				],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"gfSection": false,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 150,
+				"sectionBeats": 4,
+				"changeBPM": false,
+				"mustHitSection": true
+			}
+		],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "nothing",
+		"bpm": 150,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "oh"
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "thefrigginannoyedmouse SingRIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "thefrigginannoyedmouse SingUP"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "thefrigginannoyedmouse SingDOWN"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "thefrigginannoyedmouse SingLEFT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "idle",
+			"loop": false,
+			"name": "thefrigginannoyedmouse idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/thefrigginannoyedmouse",
+	"position": [
+		25,
+		278
+	],
+	"healthicon": "thefrigginannoyedmouse",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		106
+	],
+	"camera_position": [
+		-70,
+		-90
+	],
+	"sing_duration": 6.1,
+	"scale": 1.4
+}

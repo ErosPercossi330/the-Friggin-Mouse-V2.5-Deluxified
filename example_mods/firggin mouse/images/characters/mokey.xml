@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mokey.png"><SubTexture name="mokey idle0000" x="0" y="0" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey idle0001" x="685" y="0" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey idle0002" x="0" y="559" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey idle0003" x="685" y="559" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey idle0004" x="1370" y="0" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey idle0005" x="1370" y="559" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingRIGHT0000" x="0" y="1118" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingRIGHT0001" x="685" y="1118" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingLEFT0000" x="1370" y="1118" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingLEFT0001" x="2055" y="0" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingUP0000" x="2055" y="559" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingUP0001" x="2055" y="1118" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingDOWN0000" x="0" y="1677" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+<SubTexture name="mokey SingDOWN0001" x="685" y="1677" width="685" height="559" frameX="0" frameY="0" frameWidth="685" frameHeight="559" />
+</TextureAtlas>

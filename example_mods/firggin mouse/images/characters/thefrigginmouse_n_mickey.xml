@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginmouse_n_mickey.png"><SubTexture name="thefrigginmouse_n_mickey idle0000" x="0" y="0" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey idle0001" x="708" y="0" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey idle0002" x="1416" y="0" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey idle0003" x="2124" y="0" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingRIGHT0000" x="0" y="684" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingRIGHT0001" x="708" y="684" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingLEFT0000" x="1416" y="684" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingLEFT0001" x="2124" y="684" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingUP0000" x="0" y="1368" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingUP0001" x="708" y="1368" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingDOWN0000" x="1416" y="1368" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingDOWN0001" x="2124" y="1368" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingRIGHT-alt0000" x="0" y="2052" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingRIGHT-alt0001" x="708" y="2052" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingLEFT-alt0000" x="1416" y="2052" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingLEFT-alt0001" x="2124" y="2052" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingUP-alt0000" x="0" y="2736" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingUP-alt0001" x="708" y="2736" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingDOWN-alt0000" x="1416" y="2736" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+<SubTexture name="thefrigginmouse_n_mickey SingDOWN-alt0001" x="2124" y="2736" width="708" height="684" frameX="0" frameY="0" frameWidth="708" frameHeight="684" />
+</TextureAtlas>

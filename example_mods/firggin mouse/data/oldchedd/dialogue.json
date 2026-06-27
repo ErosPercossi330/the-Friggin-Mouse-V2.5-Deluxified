@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "stop winning"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bop."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "tfg",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i am slowly going insane"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "nice"
+		}
+	]
+}

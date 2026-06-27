@@ -1033,13 +1033,13 @@ class PlayState extends MusicBeatState
 
 		Conductor.songPosition = -5000 / Conductor.songPosition;
 
-		strumLine = new FlxSprite(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, 50).makeGraphic(FlxG.width, 10);
+		strumLine = new FlxSprite(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, 60).makeGraphic(FlxG.width, 20);
 		if(ClientPrefs.downScroll) strumLine.y = FlxG.height - 150;
 		strumLine.scrollFactor.set();
 
 		var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
-		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
-		timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 270, 23, 400, "", 45);
+		timeTxt.setFormat(Paths.font("vcr.ttf"), 45, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		timeTxt.scrollFactor.set();
 		timeTxt.alpha = 0;
 		timeTxt.borderSize = 2;
@@ -1059,9 +1059,8 @@ class PlayState extends MusicBeatState
 		timeBarBG.alpha = 0;
 		timeBarBG.visible = showTime;
 		timeBarBG.color = FlxColor.BLACK;
-		timeBarBG.xAdd = -4;
-		timeBarBG.yAdd = -4;
-		add(timeBarBG);
+		timeBarBG.xAdd = 4;
+		timeBarBG.yAdd = -2;
 
 		timeBar = new FlxBar(timeBarBG.x + 4, timeBarBG.y + 4, LEFT_TO_RIGHT, Std.int(timeBarBG.width - 8), Std.int(timeBarBG.height - 8), this,
 			'songPercent', 0, 1);
@@ -1070,8 +1069,6 @@ class PlayState extends MusicBeatState
 		timeBar.numDivisions = 800; //How much lag this causes?? Should i tone it down to idk, 400 or 200?
 		timeBar.alpha = 0;
 		timeBar.visible = showTime;
-		add(timeBar);
-		add(timeTxt);
 		timeBarBG.sprTracker = timeBar;
         
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
@@ -1164,35 +1161,45 @@ class PlayState extends MusicBeatState
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.visible = !ClientPrefs.hideHud;
-		healthBarBG.xAdd = -4;
+		healthBarBG.xAdd = -5;
 		healthBarBG.yAdd = -4;
-		add(healthBarBG);
+		healthBarBG.alpha = 0.0001;
+		healthBarBG.scale.set(0.61, 0.61);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+		healthBar = new FlxBar(healthBarBG.x - 15, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		// healthBar
 		healthBar.visible = !ClientPrefs.hideHud;
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
-		add(healthBar);
+		healthBar.scale.set(0.61, 0.61);
 		healthBarBG.sprTracker = healthBar;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
 		iconP1.visible = !ClientPrefs.hideHud;
 		iconP1.alpha = ClientPrefs.healthBarAlpha;
-		add(iconP1);
+		
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
 		iconP2.y = healthBar.y - 75;
 		iconP2.visible = !ClientPrefs.hideHud;
 		iconP2.alpha = ClientPrefs.healthBarAlpha;
-		add(iconP2);
+		
 		reloadHealthBarColors();
 
-		scoreTxt = new FlxText(0, healthBarBG.y + 44, FlxG.width, "", 20);
-		scoreTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		HUD = new FlxSprite(0).loadGraphic(Paths.image('HUD'));
+		HUD.visible = !ClientPrefs.hideHud;
+		add(HUD);
+		add(healthBarBG);
+		add(healthBar);
+		add(timeTxt);
+		add(iconP1);
+		add(iconP2);
+
+		scoreTxt = new FlxText(-10, healthBarBG.y + 24, FlxG.width, "", 20);
+		scoreTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.visible = !ClientPrefs.hideHud;
@@ -1214,7 +1221,6 @@ class PlayState extends MusicBeatState
 		ratingsSprite.scrollFactor.set(0, 0);
 		ratingsSprite.scale.set(0.8, 0.8);
 		ratingsSprite.updateHitbox();
-		ratingsSprite.cameras = [camHUD];
 
 		ratingsSprite.animation.play('?');
 		add(ratingsSprite);
@@ -1226,9 +1232,6 @@ class PlayState extends MusicBeatState
 		botplayTxt.visible = cpuControlled;
 		add(botplayTxt);
 
-		HUD = new FlxSprite(0).loadGraphic(Paths.image('HUD'));
-		add(HUD);
-
 		if(ClientPrefs.downScroll) {
 			botplayTxt.y = timeBarBG.y - 78;
 		}
@@ -1238,10 +1241,10 @@ class PlayState extends MusicBeatState
 		healthBarBG.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
+		HUD.cameras = [camHUD];
+		ratingsSprite.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 		botplayTxt.cameras = [camHUD];
-		timeBar.cameras = [camHUD];
-		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
@@ -2393,24 +2396,10 @@ class PlayState extends MusicBeatState
 
 	public function updateScore(miss:Bool = false)
 	{
-		scoreTxt.text = 
-                "NPS: "
-		        + nps
-		        + " (Max: "
-		        + maxNPS
-		        + ")"
-		        + " | " // 	NPS
-		        + "Score: " + songScore
-		        + " | Misses: " + songMisses
-		        + " | Accuracy: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
-		        + " | ";
-		        
-		        if (ratingName == 'N/A'){
-		            scoreTxt.text += 'N/A';
-		        }
-		        else {
-		            scoreTxt.text += '(' + ratingFC + ') ' + ratingName;
-		        }
+		scoreTxt.text =
+				"A: " + Math.ceil(ratingPercent * 10000) / 100 + '%' 
+		        + " S: " + songScore
+		        + " M: " + songMisses;
 		       
         /*
 		if(ClientPrefs.scoreZoom && !miss && !cpuControlled)
@@ -3137,24 +3126,9 @@ class PlayState extends MusicBeatState
 			    npsCheck = nps;
 			
 			    scoreTxt.text = 
-                "NPS: "
-		        + nps
-		        + " (Max: "
-		        + maxNPS
-		        + ")"
-		        + " | " // 	NPS
-		        + "S: " + songScore
-		        + " | M: " + songMisses
-		        + " | A: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
-		        + " | ";
-		        
-		        if (ratingName == 'N/A'){
-		            scoreTxt.text += 'N/A';
-		        }
-		        else {
-		            scoreTxt.text += '(' + ratingFC + ') ' + ratingName;
-		        }
-		       
+				"A: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
+		        + " M: " + songMisses
+		        + " S: " + songScore;  
 		        
 			}
 		
@@ -3208,8 +3182,8 @@ class PlayState extends MusicBeatState
 
 		var iconOffset:Int = 26;
 
-		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
-		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
+		iconP1.x = healthBar.x + healthBar.width - (iconP1.width / 2);
+		iconP2.x = healthBar.x - (iconP2.width / 2);
 
 		if (health > 2)
 			health = 2;
@@ -4102,8 +4076,6 @@ class PlayState extends MusicBeatState
 		MusicBeatState.androidc.alpha = 0.00001;
 		}
 		#end
-		timeBarBG.visible = false;
-		timeBar.visible = false;
 		timeTxt.visible = false;
 		canPause = false;
 		endingSong = true;
@@ -5237,7 +5209,7 @@ class PlayState extends MusicBeatState
 				ratingsSprite.animation.play('D', true);
 			} else if (ratingPercent >= 0.21) {
 				ratingsSprite.animation.play('E', true);
-			} else if (ratingPercent <= 0.20 && ratingsSprite.animation.curAnim.name != '?') {
+			} else if (ratingPercent <= 0.20 && (ratingsSprite.animation.curAnim == null || ratingsSprite.animation.curAnim.name != '?')) {
 				ratingsSprite.animation.play('F', true);
 			}
     	}

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="elmmad.png"><SubTexture name="elmmad idle0000" x="0" y="0" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad idle0001" x="415" y="0" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad idle0002" x="830" y="0" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad idle0003" x="0" y="434" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingRIGHT0000" x="415" y="434" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingRIGHT0001" x="830" y="434" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingLEFT0000" x="1245" y="0" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingLEFT0001" x="1245" y="434" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingUP0000" x="0" y="868" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingUP0001" x="415" y="868" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingDOWN0000" x="830" y="868" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+<SubTexture name="elmmad SingDOWN0001" x="1245" y="868" width="415" height="434" frameX="0" frameY="0" frameWidth="415" frameHeight="434" />
+</TextureAtlas>

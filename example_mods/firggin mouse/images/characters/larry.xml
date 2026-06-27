@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="larry.png"><SubTexture name="larry idle0000" x="0" y="0" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry idle0001" x="574" y="0" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry idle0002" x="1148" y="0" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry idle0003" x="0" y="590" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingRIGHT0000" x="574" y="590" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingRIGHT0001" x="1148" y="590" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingLEFT0000" x="1722" y="0" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingLEFT0001" x="1722" y="590" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingUP0000" x="0" y="1180" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingUP0001" x="574" y="1180" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingDOWN0000" x="1148" y="1180" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+<SubTexture name="larry SingDOWN0001" x="1722" y="1180" width="574" height="590" frameX="0" frameY="0" frameWidth="574" frameHeight="590" />
+</TextureAtlas>

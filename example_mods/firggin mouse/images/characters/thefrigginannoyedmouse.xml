@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginannoyedmouse.png"><SubTexture name="thefrigginannoyedmouse idle0000" x="0" y="0" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse idle0001" x="404" y="0" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse idle0002" x="0" y="398" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse idle0003" x="404" y="398" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingRIGHT0000" x="808" y="0" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingRIGHT0001" x="808" y="398" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingLEFT0000" x="0" y="796" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingLEFT0001" x="404" y="796" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingUP0000" x="808" y="796" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingUP0001" x="1212" y="0" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingDOWN0000" x="1212" y="398" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+<SubTexture name="thefrigginannoyedmouse SingDOWN0001" x="1212" y="796" width="404" height="398" frameX="0" frameY="0" frameWidth="404" frameHeight="398" />
+</TextureAtlas>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="3DFrigMou.png"><SubTexture name="3DFrigMou idle0000" x="0" y="0" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou idle0001" x="482" y="0" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou idle0002" x="0" y="454" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingRIGHT0000" x="482" y="454" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingRIGHT0001" x="964" y="0" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingLEFT0000" x="964" y="454" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingLEFT0001" x="0" y="908" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingUP0000" x="482" y="908" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingUP0001" x="964" y="908" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingDOWN0000" x="1446" y="0" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+<SubTexture name="3DFrigMou SingDOWN0001" x="1446" y="454" width="482" height="454" frameX="0" frameY="0" frameWidth="482" frameHeight="454" />
+</TextureAtlas>

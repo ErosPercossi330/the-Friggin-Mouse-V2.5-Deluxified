@@ -1,0 +1,57 @@
+{
+	"storyName": "\"OOOH SHIT! A MOUSE!\"",
+	"hideFreeplay": false,
+	"weekBackground": "mouse",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Mouse",
+			"thefrigginmouse",
+			[
+				255,
+				0,
+				113
+			]
+		],
+		[
+			"Chedd",
+			"thefrigginmouse",
+			[
+				255,
+				0,
+				113
+			]
+		],
+		[
+			"Mousetrap",
+			"thefrigginannoyedmouse",
+			[
+				255,
+				0,
+				113
+			]
+		],
+		[
+			"Die",
+			"thefrigginangrymouse",
+			[
+				175,
+				0,
+				113
+			]
+		]
+	],
+	"weekName": "MOUSE"
+}

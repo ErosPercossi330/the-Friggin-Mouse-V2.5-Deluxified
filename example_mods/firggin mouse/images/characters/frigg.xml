@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frigg.png"><SubTexture name="frigg idle0000" x="0" y="0" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg idle0001" x="530" y="0" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg idle0002" x="1060" y="0" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg idle0003" x="0" y="590" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingRIGHT0000" x="530" y="590" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingRIGHT0001" x="1060" y="590" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingLEFT0000" x="1590" y="0" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingLEFT0001" x="1590" y="590" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingUP0000" x="0" y="1180" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingUP0001" x="530" y="1180" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingDOWN0000" x="1060" y="1180" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+<SubTexture name="frigg SingDOWN0001" x="1590" y="1180" width="530" height="590" frameX="0" frameY="0" frameWidth="530" frameHeight="590" />
+</TextureAtlas>

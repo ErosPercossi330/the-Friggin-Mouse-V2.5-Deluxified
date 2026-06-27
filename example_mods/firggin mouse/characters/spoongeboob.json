@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "spoongeboob idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "spoongeboob SingLEFT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "spoongeboob SingDOWN"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singUP",
+			"indices": [],
+			"name": "spoongeboob SingUP"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "spoongeboob SingRIGHT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/spoongeboob",
+	"position": [
+		-190,
+		310
+	],
+	"healthicon": "spoongeboob",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		121
+	],
+	"camera_position": [
+		30,
+		-100
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

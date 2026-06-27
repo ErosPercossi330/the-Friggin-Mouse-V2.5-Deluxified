@@ -1,0 +1,106 @@
+{
+	"song": {
+		"events": [
+			[
+				20000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExScream"
+					]
+				]
+			],
+			[
+				21333.3333333333,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExAngy"
+					]
+				]
+			],
+			[
+				42000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExScream"
+					]
+				]
+			],
+			[
+				42666.6666666667,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExAngy"
+					]
+				]
+			],
+			[
+				84000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExScream"
+					]
+				]
+			],
+			[
+				85333.3333333333,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExAngy"
+					]
+				]
+			],
+			[
+				106083.333333333,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExScream"
+					]
+				]
+			],
+			[
+				106666.666666667,
+				[
+					[
+						"Change Character",
+						"dad",
+						"ExAngy"
+					]
+				]
+			],
+			[
+				128000,
+				[
+					[
+						"Fade UI",
+						"1",
+						"3"
+					]
+				]
+			],
+			[
+				133333.333333333,
+				[
+					[
+						"Image Flash",
+						"Black",
+						"999"
+					]
+				]
+			]
+		]
+	}
+}

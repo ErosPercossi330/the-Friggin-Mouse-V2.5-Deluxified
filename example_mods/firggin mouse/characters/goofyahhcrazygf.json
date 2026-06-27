@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "idle",
+			"loop": false,
+			"name": "goofyahhcrazygf idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singUP",
+			"loop": false,
+			"name": "goofyahhcrazygf SingUP"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "goofyahhcrazygf SingRIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "goofyahhcrazygf SingLEFT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "goofyahhcrazygf SingDOWN"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/goofyahhcrazygf",
+	"position": [
+		-150,
+		130
+	],
+	"healthicon": "goofyahhcrazygf",
+	"flip_x": false,
+	"healthbar_colors": [
+		185,
+		0,
+		0
+	],
+	"camera_position": [
+		80,
+		40
+	],
+	"sing_duration": 4,
+	"scale": 1.1
+}

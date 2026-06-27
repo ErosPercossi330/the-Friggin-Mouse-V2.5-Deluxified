@@ -1,0 +1,33 @@
+{
+	"songs": [
+		[
+			"insane-pain",
+			"thefrigginangrymouse",
+			[
+				20,
+				0,
+				0
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "mouse3",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "its over",
+	"difficulties": "Normal",
+	"weekName": "penis",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

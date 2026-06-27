@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="MarioPNG.png">
+<SubTexture name="Idle0000" x="531" y="1971" width="619" height="269" frameX="-56" frameY="-451" frameWidth="732" frameHeight="720" />
+<SubTexture name="Idle0001" x="2261" y="0" width="476" height="439" frameX="-123" frameY="-281" frameWidth="732" frameHeight="720" />
+<SubTexture name="Idle0002" x="1440" y="1347" width="393" height="531" frameX="-159" frameY="-189" frameWidth="732" frameHeight="720" />
+<SubTexture name="Idle0003" x="1093" y="1347" width="347" height="598" frameX="-185" frameY="-122" frameWidth="732" frameHeight="720" />
+<SubTexture name="Idle0004" x="510" y="713" width="298" height="632" frameX="-216" frameY="-88" frameWidth="732" frameHeight="720" />
+<SubTexture name="Left0000" x="1230" y="0" width="546" height="640" frameX="-50" frameY="-80" frameWidth="732" frameHeight="720" />
+<SubTexture name="Left0001" x="808" y="713" width="524" height="631" frameX="-106" frameY="-89" frameWidth="732" frameHeight="720" />
+<SubTexture name="Left0002" x="0" y="713" width="510" height="634" frameX="-154" frameY="-86" frameWidth="732" frameHeight="720" />
+<SubTexture name="Up0000" x="0" y="0" width="151" height="713" frameX="-317" frameY="-7" frameWidth="732" frameHeight="720" />
+<SubTexture name="Up0001" x="553" y="0" width="275" height="676" frameX="-250" frameY="-44" frameWidth="732" frameHeight="720" />
+<SubTexture name="Up0002" x="1332" y="713" width="436" height="630" frameX="-147" frameY="-90" frameWidth="732" frameHeight="720" />
+<SubTexture name="Down0000" x="1150" y="1971" width="640" height="179" frameX="-46" frameY="-541" frameWidth="732" frameHeight="720" />
+<SubTexture name="Down0001" x="0" y="1971" width="531" height="298" frameX="-94" frameY="-422" frameWidth="732" frameHeight="720" />
+<SubTexture name="Down0002" x="2261" y="439" width="422" height="422" frameX="-157" frameY="-298" frameWidth="732" frameHeight="720" />
+<SubTexture name="Right0000" x="0" y="1347" width="576" height="624" frameX="-131" frameY="-96" frameWidth="732" frameHeight="720" />
+<SubTexture name="Right0001" x="576" y="1347" width="517" height="622" frameX="-134" frameY="-98" frameWidth="732" frameHeight="720" />
+<SubTexture name="Right0002" x="1776" y="0" width="485" height="628" frameX="-138" frameY="-92" frameWidth="732" frameHeight="720" />
+<SubTexture name="Hey0000" x="151" y="0" width="402" height="699" frameX="-174" frameY="-21" frameWidth="732" frameHeight="720" />
+<SubTexture name="Hey0001" x="828" y="0" width="402" height="647" frameX="-174" frameY="-73" frameWidth="732" frameHeight="720" />
+<SubTexture name="Hey0002" x="1776" y="628" width="403" height="606" frameX="-174" frameY="-114" frameWidth="732" frameHeight="720" />
+</TextureAtlas>

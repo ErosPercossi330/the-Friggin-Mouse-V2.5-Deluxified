@@ -1,0 +1,108 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok done"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "no"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "what"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "rap battle again"
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "no go fuck yourself"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "pls or i cry"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "no"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "*cries*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "lmao l bozo"
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "pls rap me again"
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "if you shut the up i will rap again"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "thefrigginmouse",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ok then here we go"
+		}
+	]
+}

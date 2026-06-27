@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="laffers.png"><SubTexture name="laffers idle0000" x="0" y="0" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers idle0001" x="651" y="0" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers idle0002" x="0" y="559" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers idle0003" x="651" y="559" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingRIGHT0000" x="1302" y="0" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingRIGHT0001" x="1302" y="559" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingLEFT0000" x="0" y="1118" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingLEFT0001" x="651" y="1118" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingUP0000" x="1302" y="1118" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingUP0001" x="1953" y="0" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingDOWN0000" x="1953" y="559" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+<SubTexture name="laffers SingDOWN0001" x="1953" y="1118" width="651" height="559" frameX="0" frameY="0" frameWidth="651" frameHeight="559" />
+</TextureAtlas>

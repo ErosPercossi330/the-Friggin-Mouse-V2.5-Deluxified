@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "WhatYouKnowAboutRollingDownInTheDeep",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 15,
+			"name": "thefrigginmouse idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 15,
+			"name": "thefrigginmouse Sing DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singUP",
+			"fps": 15,
+			"name": "thefrigginmouse Sing UP",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "thefrigginmouse Sing RIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "thefrigginmouse Sing LEFT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/thefrigginmouse",
+	"position": [
+		40,
+		300
+	],
+	"healthicon": "thefrigginmouse",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		126
+	],
+	"camera_position": [
+		230,
+		-90
+	],
+	"sing_duration": 6.1,
+	"scale": 1.4
+}
