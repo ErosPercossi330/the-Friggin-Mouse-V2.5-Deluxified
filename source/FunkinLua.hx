@@ -57,10 +57,6 @@ import hscript.Expr;
 import Discord;
 #end
 
-#if android
-import android.Hardware;
-#end
-
 using StringTools;
 
 class FunkinLua {
@@ -2403,9 +2399,6 @@ class FunkinLua {
 		});
 
 		Lua_helper.add_callback(lua, "vibration", function(milliseconds:Int) {
-			#if mobile
-			Hardware.vibrate(milliseconds);
-			#end
 		});
 
 		// LUA TEXTS

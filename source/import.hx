@@ -1,5 +1,24 @@
 import Paths;
 
+#if sys
+import sys.*;
+import sys.io.*;
+#elseif js
+import js.html.*;
+#end
+
+#if android
+import android.content.Context as AndroidContext;
+import android.widget.Toast as AndroidToast;
+import android.os.Environment as AndroidEnvironment;
+import android.Permissions as AndroidPermissions;
+import android.Settings as AndroidSettings;
+import android.Tools as AndroidTools;
+import android.os.Build.VERSION as AndroidVersion;
+import android.os.Build.VERSION_CODES as AndroidVersionCode;
+import android.os.BatteryManager as AndroidBatteryManager;
+#end
+
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxCamera;
@@ -14,3 +33,5 @@ import flixel.tweens.FlxTween;
 import flixel.group.FlxSpriteGroup;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
+
+using StringTools;

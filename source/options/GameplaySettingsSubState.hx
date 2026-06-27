@@ -24,9 +24,6 @@ import flixel.util.FlxTimer;
 import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
 import Controls;
-#if mobile
-import android.Hardware;
-#end
 
 using StringTools;
 
@@ -165,14 +162,4 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 	{
 		FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
 	}
-
-	#if mobile
-	function onChangeVibration()
-	{
-		if(ClientPrefs.vibration)
-		{
-			Hardware.vibrate(500);
-		}
-	}
-	#end
 }

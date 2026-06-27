@@ -293,7 +293,7 @@ class Paths
 			return true;
 		}
 		#if (android || linux || ios)
-		else if (FileSystem.exists(findFile(key, type))) {
+		else if (FileSystem.exists(findFile(key))) {
 			return true;
 		}
 		#end
@@ -472,8 +472,8 @@ class Paths
 				return fileToCheck;
 			}
 			#if (android || linux || ios)
-			else if (FileSystem.exists(findFile(fileToCheck))) {
-				return true;
+			else if (FileSystem.exists(findFile(key))) {
+				return fileToCheck;
 			}
 			#end
 		}
@@ -485,7 +485,7 @@ class Paths
 			}
 			#if (android || linux || ios)
 			else if (FileSystem.exists(findFile(fileToCheck))) {
-				return true;
+				return fileToCheck;
 			}
 			#end
 
@@ -552,7 +552,7 @@ class Paths
 
 		var baseDir:String = targetParts.shift();
 		var searchDirs:Array<String> = [
-			mods(Mods.currentModDirectory + '/' + baseDir),
+			mods(Paths.currentModDirectory + '/' + baseDir),
 			mods(baseDir)
 		];
 

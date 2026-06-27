@@ -126,12 +126,12 @@ class SUtil
 
 		try
 		{
-			if (!FileSystem.exists(StorageUtil.getStorageDirectory()))
-				createDirectories(StorageUtil.getStorageDirectory());
+			if (!FileSystem.exists(SUtil.getStorageDirectory()))
+				createDirectories(SUtil.getStorageDirectory());
 		}
 		catch (e:Dynamic)
 		{
-			CoolUtil.showPopUp('Please create directory to\n' + StorageUtil.getStorageDirectory(true) + '\nPress OK to close the game', 'Error!');
+			CoolUtil.showPopUp('Please create directory to\n' + SUtil.getStorageDirectory(true) + '\nPress OK to close the game', 'Error!');
 			LimeSystem.exit(1);
 		}
 	}
@@ -187,7 +187,7 @@ enum abstract StorageType(String) from String to String
 			case "EXTERNAL_OBB": EXTERNAL_OBB;
 			case "EXTERNAL_MEDIA": EXTERNAL_MEDIA;
 			case "EXTERNAL": EXTERNAL;
-			default: StorageUtil.getExternalDirectory(str) + '.' + fileLocal;
+			default: SUtil.getExternalDirectory(str) + '.' + fileLocal;
 		}
 	}
 
@@ -205,7 +205,7 @@ enum abstract StorageType(String) from String to String
 			case "EXTERNAL_OBB": EXTERNAL_OBB;
 			case "EXTERNAL_MEDIA": EXTERNAL_MEDIA;
 			case "EXTERNAL": EXTERNAL;
-			default: StorageUtil.getExternalDirectory(str) + '.' + fileLocal;
+			default: SUtil.getExternalDirectory(str) + '.' + fileLocal;
 		}
 	}
 }
