@@ -111,10 +111,10 @@ class MainMenuState extends MusicBeatState
 
         for (i in 0...optionShit.length)
         {
-            var offset:Float = 230 - (Math.max(optionShit.length, 4) - 4) * 80;
+            var offset:Float = 250 - (Math.max(optionShit.length, 4) - 4) * 80;
             
             var slantOffset:Float = i * 25; 
-            var menuItem:FlxSprite = new FlxSprite(80 - slantOffset, (i * 120) + offset); 
+            var menuItem:FlxSprite = new FlxSprite(100 - slantOffset, (i * 120) + offset); 
             
             menuItem.scale.x = scale;
             menuItem.scale.y = scale;
@@ -340,7 +340,7 @@ class MainMenuState extends MusicBeatState
                 camFollow.setPosition(spr.x + (spr.width / 2), spr.getGraphicMidpoint().y - add);
                 spr.centerOffsets();
             }
-            spr.x = 80 - (spr.ID * 25); 
+            spr.x = 80;
         });
     }
 
