@@ -47,6 +47,13 @@ jobs:
             artifactName: windowsBuild
             artifactPath: export/release/windows/bin/*
             system: Windows
+          - name: Android
+            os: ubuntu-24.04
+            buildArgs: "android -D officialBuild -final" 
+            setupCommand: sh ./setup/unix.sh
+            artifactName: androidBuild
+            artifactPath: "export/release/android/bin/app/build/outputs/apk/release/*.apk"
+            system: Android
     uses: ./.github/workflows/build.yml
     with:
         name: ${{ matrix.name }}
@@ -73,6 +80,15 @@ jobs:
           cd /home/runner/windowsBuild
           zip -r "/home/runner/${{ env.PROJECT_NAME }}-Windows.zip" .
 
+      - name: Download Android Build
+        uses: actions/download-artifact@main
+        with:
+           name: androidBuild
+           path: /home/runner
+
+      - name: Move Android File
+        run: mv /home/runner/${{ env.PROJECT_NAME }}-release.apk /home/runner/${{ env.PROJECT_NAME }}-MobilePad-Update.apk
+
       - name: Publish The Release
         uses: softprops/action-gh-release@v2
         with:
@@ -82,3 +98,4 @@ jobs:
           #prerelease: false
           files: |
             /home/runner/*.zip
+            /home/runner/*.apk

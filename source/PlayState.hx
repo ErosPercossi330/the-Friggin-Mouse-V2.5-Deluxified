@@ -2797,23 +2797,32 @@ class PlayState extends MusicBeatState
 			}
 
 			if (player == 1)
-			{
-				playerStrums.add(babyArrow);
-			}
-			else
-			{
-				if(ClientPrefs.middleScroll)
-				{
-					babyArrow.x += 310;
-					if(i > 1) { //Up and Right
-						babyArrow.x += FlxG.width / 2 + 25;
-					}
-				}
-				opponentStrums.add(babyArrow);
-			}
+            {
+                if(!ClientPrefs.middleScroll) {
+                    babyArrow.x += 50; 
+                }
+                
+                playerStrums.add(babyArrow);
+            }
+            else
+            {
+                if(ClientPrefs.middleScroll)
+                {
+                    babyArrow.x += 310;
+                    if(i > 1) { //Up and Right
+                        babyArrow.x += FlxG.width / 2 + 25;
+                    }
+                }
+                else
+                {
+                    babyArrow.x -= 50; 
+                }
+                
+                opponentStrums.add(babyArrow);
+            }
 
-			strumLineNotes.add(babyArrow);
-			babyArrow.postAddedToGroup();
+            strumLineNotes.add(babyArrow);
+            babyArrow.postAddedToGroup();
 		}
 	}
 

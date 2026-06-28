@@ -278,26 +278,27 @@ class Paths
 
 	inline static public function fileExists(key:String, type:AssetType, ?ignoreMods:Bool = false, ?library:String)
 	{
-		#if MODS_ALLOWED
-		if(FileSystem.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
-			return true;
-		#if (android || linux || ios)
-		}
-		else if (FileSystem.exists(findFile(key))) {
-			return true;
-		#end
-		}
-		#end
+    #if MODS_ALLOWED
+    if(FileSystem.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
+        return true;
+    }
+    #if (android || linux || ios)
+    else if (FileSystem.exists(findFile(key))) {
+        return true;
+    }
+    #end
+    #end
 
-		if(OpenFlAssets.exists(getPath(key, type))) {
-			return true;
-		#if (android || linux || ios)
-		}
-		else if (FileSystem.exists(findFile(key))) {
-			return true;
-		#end
-		}
-		return false;
+    if(OpenFlAssets.exists(getPath(key, type))) {
+        return true;
+    }
+    #if (android || linux || ios)
+    else if (FileSystem.exists(findFile(key))) {
+        return true;
+    }
+    #end
+
+    return false;
 	}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String):FlxAtlasFrames
@@ -468,28 +469,24 @@ class Paths
 	static public function modFolders(key:String) {
 		if(currentModDirectory != null && currentModDirectory.length > 0) {
 			var fileToCheck:String = mods(currentModDirectory + '/' + key);
-			if(FileSystem.exists(fileToCheck)) {
+			if(FileSystem.exists(fileToCheck))
 				return fileToCheck;
-			}
 			#if (android || linux || ios)
-			else if (FileSystem.exists(findFile(key))) {
+			else if (FileSystem.exists(findFile(key)))
 				return fileToCheck;
-			}
 			#end
 		}
 
 		for(mod in getGlobalMods()){
 			var fileToCheck:String = mods(mod + '/' + key);
-			if(FileSystem.exists(fileToCheck)) {
+			if(FileSystem.exists(fileToCheck))
 				return fileToCheck;
-			}
 			#if (android || linux || ios)
-			else if (FileSystem.exists(findFile(fileToCheck))) {
+			else if (FileSystem.exists(findFile(fileToCheck))) 
 				return fileToCheck;
-			}
 			#end
-
 		}
+
 		return if (ClientPrefs.Modpack) SUtil.getStorageDirectory() + 'modpack/' + key; else SUtil.getStorageDirectory() + 'mods/' + key;
 	}
 

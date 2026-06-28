@@ -20,6 +20,7 @@ import lime.app.Application;
 import Achievements;
 import editors.MasterEditorMenu;
 import flixel.input.keyboard.FlxKey;
+import Character;
 
 using StringTools;
 
@@ -43,6 +44,7 @@ class MainMenuState extends MusicBeatState
 	];
 
 	var magenta:FlxSprite;
+	var menuChar:Character;
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
@@ -77,7 +79,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('BG-abc'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -103,37 +105,65 @@ class MainMenuState extends MusicBeatState
 		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
-		add(menuItems);
+        add(menuItems);
 
-		var scale:Float = 1;
-		/*if(optionShit.length > 6) {
-			scale = 6 / optionShit.length;
-		}*/
+        var scale:Float = 0.55; 
 
-		for (i in 0...optionShit.length)
-		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
-			menuItem.scale.x = scale;
-			menuItem.scale.y = scale;
-			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
-			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
-			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.play('idle');
-			menuItem.ID = i;
-			menuItem.screenCenter(X);
-			menuItems.add(menuItem);
-			var scr:Float = (optionShit.length - 4) * 0.135;
-			if(optionShit.length < 6) scr = 0;
-			menuItem.scrollFactor.set(0, scr);
-			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
-			menuItem.updateHitbox();
-		}
+        for (i in 0...optionShit.length)
+        {
+            var offset:Float = 230 - (Math.max(optionShit.length, 4) - 4) * 80;
+            
+            var slantOffset:Float = i * 25; 
+            var menuItem:FlxSprite = new FlxSprite(80 - slantOffset, (i * 120) + offset); 
+            
+            menuItem.scale.x = scale;
+            menuItem.scale.y = scale;
+            menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
+            menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
+            menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
+            menuItem.animation.play('idle');
+            menuItem.ID = i;
+            
+            menuItems.add(menuItem);
+            var scr:Float = (optionShit.length - 3) * 0.135;
+            if(optionShit.length < 2) scr = 0;
+            menuItem.scrollFactor.set(0, scr);
+            menuItem.antialiasing = ClientPrefs.globalAntialiasing;
+            menuItem.updateHitbox(); 
+        }
 
-		FlxG.camera.follow(camFollowPos, null, 1);
+        FlxG.camera.scroll.set(0, 0); 
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+        var poolOfChars:Array<String> = [];
+        #if MODS_ALLOWED
+        poolOfChars = sys.FileSystem.readDirectory(Paths.mods('firggin mouse/characters/'));
+        #else
+        poolOfChars = ['bf', 'dad', 'pico', 'gf'];
+        #end
+
+        var cleanPool:Array<String> = [];
+        for (charFile in poolOfChars) {
+            if (charFile.endsWith('.json')) {
+                cleanPool.push(charFile.replace('.json', ''));
+            }
+        }
+        if (cleanPool.length == 0) cleanPool = ['bf', 'dad', 'pico', 'gf'];
+
+        var randomChar:String = FlxG.random.getObject(cleanPool);
+        trace('Successfully parsed configuration files! Loading character: ' + randomChar);
+
+        menuChar = new Character(950, 400, randomChar, false);
+        menuChar.scrollFactor.set(0, 0);
+        
+        menuChar.setGraphicSize(Std.int(menuChar.width * 0.75));
+        menuChar.updateHitbox();
+        
+        menuChar.cameras = [camGame]; 
+        
+        add(menuChar);
+        menuChar.dance();
+
+        var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -274,7 +304,7 @@ class MainMenuState extends MusicBeatState
 					});
 				}
 			}
-			#if (desktop || android)
+			#if (desktop || mobile)
 			else if (FlxG.keys.anyJustPressed(debugKeys) #if mobile || _virtualpad.buttonE.justPressed #end)
 			{
 				selectedSomethin = true;
@@ -284,37 +314,41 @@ class MainMenuState extends MusicBeatState
 		}
 
 		super.update(elapsed);
-
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			spr.screenCenter(X);
-		});
 	}
 
 	function changeItem(huh:Int = 0)
-	{
-		curSelected += huh;
+    {
+        curSelected += huh;
 
-		if (curSelected >= menuItems.length)
-			curSelected = 0;
-		if (curSelected < 0)
-			curSelected = menuItems.length - 1;
+        if (curSelected >= menuItems.length)
+            curSelected = 0;
+        if (curSelected < 0)
+            curSelected = menuItems.length - 1;
 
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			spr.animation.play('idle');
-			spr.updateHitbox();
+        menuItems.forEach(function(spr:FlxSprite)
+        {
+            spr.animation.play('idle');
+            spr.updateHitbox();
 
-			if (spr.ID == curSelected)
-			{
-				spr.animation.play('selected');
-				var add:Float = 0;
-				if(menuItems.length > 4) {
-					add = menuItems.length * 8;
-				}
-				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y - add);
-				spr.centerOffsets();
-			}
-		});
-	}
+            if (spr.ID == curSelected)
+            {
+                spr.animation.play('selected');
+                var add:Float = 0;
+                if(menuItems.length > 4) {
+                    add = menuItems.length * 8;
+                }
+                camFollow.setPosition(spr.x + (spr.width / 2), spr.getGraphicMidpoint().y - add);
+                spr.centerOffsets();
+            }
+            spr.x = 80 - (spr.ID * 25); 
+        });
+    }
+
+	override function beatHit()
+    {
+        super.beatHit();
+        if (menuChar != null) {
+            menuChar.dance();
+        }
+    }
 }
