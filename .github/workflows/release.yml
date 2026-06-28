@@ -72,7 +72,7 @@ jobs:
         system: ${{ matrix.system }}
 
   Releaser:
-    needs: [get-commit-hash, build]
+    needs: [build]
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -108,8 +108,8 @@ jobs:
       - name: Publish The Release
         uses: softprops/action-gh-release@v2
         with:
-          name: "DevBuild ${{ needs.get-commit-hash.outputs.commit_hash }}"
-          tag_name: "devbuild-${{ needs.get-commit-hash.outputs.commit_hash }}"
+          name: "DevBuild v1.0.${{ github.run_number }}"
+          tag_name: "v1.0.${{ github.run_number }}"
           make_latest: true
           #prerelease: false
           files: |
