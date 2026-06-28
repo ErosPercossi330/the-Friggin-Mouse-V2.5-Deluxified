@@ -2,9 +2,7 @@ name: Build PsychEngine + Release
 run-name: FNF VS Frigging Mouse Deluxified
 on: workflow_dispatch
 
-permissions:
-  contents: write
-  discussions: write
+permissions: write-all
 
 env:
   PROJECT_NAME: PsychEngine
