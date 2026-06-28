@@ -47,6 +47,7 @@ jobs:
             artifactName: windowsBuild
             artifactPath: export/release/windows/bin/*
             system: Windows
+            doCache: "YES"
           - name: Android
             os: ubuntu-24.04
             buildArgs: "android -D officialBuild -final" 
@@ -54,6 +55,7 @@ jobs:
             artifactName: androidBuild
             artifactPath: "export/release/android/bin/app/build/outputs/apk/release/*.apk"
             system: Android
+            doCache: "YES"
           - name: iOS
             os: macos-15
             setupCommand: sh ./setup/unix.sh
@@ -61,6 +63,7 @@ jobs:
             artifactName: iOSBuild
             artifactPath: "export/release/ios/build/Release-iphoneos/*.ipa"
             system: iOS
+            doCache: "YES"
     uses: ./.github/workflows/build.yml
     with:
         name: ${{ matrix.name }}
@@ -70,6 +73,7 @@ jobs:
         artifactName: ${{ matrix.artifactName }}
         artifactPath: ${{ matrix.artifactPath }}
         system: ${{ matrix.system }}
+        doCache: ${{ matrix.doCache }}
 
   Releaser:
     needs: [build]
