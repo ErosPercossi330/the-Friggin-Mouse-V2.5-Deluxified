@@ -2799,7 +2799,7 @@ class PlayState extends MusicBeatState
 			if (player == 1)
             {
                 if(!ClientPrefs.middleScroll) {
-                    babyArrow.x += 50; 
+                    babyArrow.x += 80; 
                 }
                 
                 playerStrums.add(babyArrow);
@@ -2815,7 +2815,7 @@ class PlayState extends MusicBeatState
                 }
                 else
                 {
-                    babyArrow.x -= 50; 
+                    babyArrow.x -= 80; 
                 }
                 
                 opponentStrums.add(babyArrow);
