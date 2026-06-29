@@ -119,8 +119,11 @@ class MusicBeatState extends FlxUIState
 	
 	override function destroy() {
 		#if mobile
-		controls.removeFlxInput(trackedinputsNOTES);
-		controls.removeFlxInput(trackedinputsUI);
+		if (_virtualpad != null)
+		{
+		if (trackedinputsUI != null) { controls.removeFlxInput(trackedinputsUI);}
+		if (trackedinputsNOTES != null) { controls.removeFlxInput(trackedinputsNOTES); }
+		}
 		#end
 
 		super.destroy();
