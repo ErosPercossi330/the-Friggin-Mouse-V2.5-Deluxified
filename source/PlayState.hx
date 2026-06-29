@@ -1434,8 +1434,10 @@ class PlayState extends MusicBeatState
 
 		super.create();
 
+		#if mobile
 		addVirtualPad(NONE, P);
 		addPadCamera();
+		#end
 
 		cacheCountdown();
 		cachePopUpScore();
