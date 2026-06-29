@@ -3,6 +3,7 @@ package;
 #if sys
 import funk.PsychFileSytem as FileSystem;
 import funk.PsychFile as File;
+#end
 
 #if desktop
 import Discord.DiscordClient;
@@ -96,7 +97,7 @@ class MainMenuState extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('BG-abc'));
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
