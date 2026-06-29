@@ -1,7 +1,7 @@
 package;
 
 #if sys
-import funk.PsychFileSytem as FileSystem;
+import funk.PsychFileSystem as FileSystem;
 import funk.PsychFile as File;
 #end
 
