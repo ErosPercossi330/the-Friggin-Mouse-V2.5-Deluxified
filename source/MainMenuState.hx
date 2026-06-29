@@ -1,5 +1,9 @@
 package;
 
+#if sys
+import funk.PsychFileSytem as FileSystem;
+import funk.PsychFile as File;
+
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -136,7 +140,7 @@ class MainMenuState extends MusicBeatState
 
         var poolOfChars:Array<String> = [];
         #if MODS_ALLOWED
-        poolOfChars = sys.FileSystem.readDirectory(Paths.mods('firggin mouse/characters/'));
+        poolOfChars = FileSystem.readDirectory(Paths.mods('firggin mouse/characters/'));
         #else
         poolOfChars = ['bf', 'dad', 'pico', 'gf'];
         #end
