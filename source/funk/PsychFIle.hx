@@ -1,11 +1,10 @@
 package funk;
 
 import openfl.Assets;
-import SUtil;
 #if sys
 import sys.FileSystem;
 import sys.FileStat;
-import sys.File;
+import sys.io.File;
 import sys.io.FileInput;
 import sys.io.FileOutput;
 #end

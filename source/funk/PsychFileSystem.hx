@@ -1,7 +1,6 @@
 package funk;
 
 import openfl.Assets;
-import SUtil;
 #if sys
 import sys.FileSystem;
 import sys.FileStat;
