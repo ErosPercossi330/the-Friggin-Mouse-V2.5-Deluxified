@@ -338,7 +338,7 @@ class FlxAnimationController implements IFlxDestroyable
 	 * @param   Prefix      Common beginning of image names in the atlas (e.g. `"tiles-"`).
 	 * @param   Indices     An array of strings indicating what frames to play in what order
 	 *                      (e.g. `["01", "02", "03"]`).
-	 * @param   Postfix     Common ending of image names in atlas (e.g. `".png"`).
+	 * @param   Postfix     Common ending of image names in atlas (e.g. ` #if desktop ".png" #elseif mobile ".astc" #end`).
 	 * @param   FrameRate   The speed in frames per second that the animation should play at (e.g. `40` fps).
 	 * @param   Looped      Whether or not the animation is looped or just plays once.
 	 * @param   FlipX       Whether the frames should be flipped horizontally.
@@ -370,7 +370,7 @@ class FlxAnimationController implements IFlxDestroyable
 	 * @param   Name      What the existing animation is called (e.g. `"run"`).
 	 * @param   Prefix    Common beginning of image names in the atlas (e.g. `"tiles-"`).
 	 * @param   Indices   An array of strings indicating what frames to append (e.g. `["01", "02", "03"]`).
-	 * @param   Postfix   Common ending of image names in atlas (e.g. `".png"`).
+	 * @param   Postfix   Common ending of image names in atlas (e.g. ` #if desktop ".png" #elseif mobile ".astc" #end`).
 	 */
 	public function appendByStringIndices(Name:String, Prefix:String, Indices:Array<String>, Postfix:String):Void
 	{
@@ -394,7 +394,7 @@ class FlxAnimationController implements IFlxDestroyable
 	 * @param   Name        What this animation should be called (e.g. `"run"`).
 	 * @param   Prefix      Common beginning of image names in the atlas (e.g. "tiles-").
 	 * @param   Indices     An array of numbers indicating what frames to play in what order (e.g. `[0, 1, 2]`).
-	 * @param   Postfix     Common ending of image names in the atlas (e.g. `".png"`).
+	 * @param   Postfix     Common ending of image names in the atlas (e.g. ` #if desktop ".png" #elseif mobile ".astc" #end`).
 	 * @param   FrameRate   The speed in frames per second that the animation should play at (e.g. `40` fps).
 	 * @param   Looped      Whether or not the animation is looped or just plays once.
 	 * @param   FlipX       Whether the frames should be flipped horizontally.
@@ -427,7 +427,7 @@ class FlxAnimationController implements IFlxDestroyable
 	 * @param   Name      What the existing animation is called (e.g. `"run"`).
 	 * @param   Prefix    Common beginning of image names in atlas (e.g. `"tiles-"`).
 	 * @param   Indices   An array of numbers indicating what frames to append (e.g. `[0, 1, 2]`).
-	 * @param   Postfix   Common ending of image names in atlas (e.g. `".png"`).
+	 * @param   Postfix   Common ending of image names in atlas (e.g. ` #if desktop ".png" #elseif mobile ".astc" #end`).
 	 */
 	public function appendByIndices(Name:String, Prefix:String, Indices:Array<Int>, Postfix:String):Void
 	{
@@ -446,7 +446,7 @@ class FlxAnimationController implements IFlxDestroyable
 	}
 
 	/**
-	 * Find a sprite frame so that for `Prefix = "file"; Index = 5; Postfix = ".png"`
+	 * Find a sprite frame so that for `Prefix = "file"; Index = 5; Postfix =  #if desktop ".png" #elseif mobile ".astc" #end`
 	 * It will find frame with name `"file5.png"`. If it doesn't exist it will try
 	 * to find `"file05.png"`, allowing 99 frames per animation.
 	 * Returns the found frame or `-1` on failure.
@@ -506,7 +506,7 @@ class FlxAnimationController implements IFlxDestroyable
 	 * Adds to an existing animation in the sprite by appending the specified frames to the existing frames.
 	 * Use this method when the names of each frame from the atlas share a common prefix
 	 * (e.g. `"walk00.png"`, `"walk01.png"`).
-	 * Frames are sorted numerically while ignoring postfixes (e.g. `".png"`, `".gif"`).
+	 * Frames are sorted numerically while ignoring postfixes (e.g. ` #if desktop ".png" #elseif mobile ".astc" #end`, `".gif"`).
 	 * The animation must already exist in order to append frames to it.
 	 *
 	 * @param   Name     What the existing animation is called (e.g. `"run"`).

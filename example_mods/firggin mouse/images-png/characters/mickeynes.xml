@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mickeynes.png"><SubTexture name="mickeynes idle0000" x="0" y="0" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes idle0001" x="256" y="0" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingRIGHT0000" x="512" y="0" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingRIGHT0001" x="768" y="0" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingLEFT0000" x="0" y="284" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingLEFT0001" x="256" y="284" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingUP0000" x="512" y="284" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingUP0001" x="768" y="284" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingDOWN0000" x="0" y="568" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+<SubTexture name="mickeynes SingDOWN0001" x="256" y="568" width="256" height="284" frameX="0" frameY="0" frameWidth="256" frameHeight="284" />
+</TextureAtlas>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="helpmemickey.png"><SubTexture name="helpmemickey idle0000" x="0" y="0" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey idle0001" x="661" y="0" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey idle0002" x="0" y="604" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey idle0003" x="661" y="604" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey idle0004" x="1322" y="0" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey idle0005" x="1322" y="604" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingRIGHT0000" x="0" y="1208" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingRIGHT0001" x="661" y="1208" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingRIGHT0002" x="1322" y="1208" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingLEFT0000" x="1983" y="0" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingLEFT0001" x="1983" y="604" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingLEFT0002" x="1983" y="1208" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingUP0000" x="0" y="1812" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingUP0001" x="661" y="1812" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingUP0002" x="1322" y="1812" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingDOWN0000" x="1983" y="1812" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingDOWN0001" x="2644" y="0" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+<SubTexture name="helpmemickey SingDOWN0002" x="2644" y="604" width="661" height="604" frameX="0" frameY="0" frameWidth="661" frameHeight="604" />
+</TextureAtlas>

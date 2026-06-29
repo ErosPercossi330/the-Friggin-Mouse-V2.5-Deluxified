@@ -28,8 +28,8 @@ import flash.net.FileFilter;
 import lime.system.Clipboard;
 import haxe.Json;
 #if sys
-import sys.io.File;
-import sys.FileSystem;
+import funk.PsychFile as File;
+import funk.PsychFileSystem as FileSystem;
 #end
 import WeekData;
 
@@ -343,7 +343,7 @@ class WeekEditorState extends MusicBeatState
 		var isMissing:Bool = true;
 		if(assetName != null && assetName.length > 0) {
 			if( #if MODS_ALLOWED FileSystem.exists(Paths.modsImages('menubackgrounds/menu_' + assetName)) || #end
-			Assets.exists(Paths.getPath('images/menubackgrounds/menu_' + assetName + '.png', IMAGE), IMAGE)) {
+			Assets.exists(Paths.getPath('images/menubackgrounds/menu_' + assetName +  #if desktop '.png' #elseif mobile '.astc' #end, IMAGE), IMAGE)) {
 				bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_' + assetName));
 				isMissing = false;
 			}
@@ -362,7 +362,7 @@ class WeekEditorState extends MusicBeatState
 		var isMissing:Bool = true;
 		if(assetName != null && assetName.length > 0) {
 			if( #if MODS_ALLOWED FileSystem.exists(Paths.modsImages('storymenu/' + assetName)) || #end
-			Assets.exists(Paths.getPath('images/storymenu/' + assetName + '.png', IMAGE), IMAGE)) {
+			Assets.exists(Paths.getPath('images/storymenu/' + assetName +  #if desktop '.png' #elseif mobile '.astc' #end, IMAGE), IMAGE)) {
 				weekThing.loadGraphic(Paths.image('storymenu/' + assetName));
 				isMissing = false;
 			}
@@ -371,7 +371,7 @@ class WeekEditorState extends MusicBeatState
 		if(isMissing) {
 			weekThing.visible = false;
 			missingFileText.visible = true;
-			missingFileText.text = 'MISSING FILE: images/storymenu/' + assetName + '.png';
+			missingFileText.text = 'MISSING FILE: images/storymenu/' + assetName +  #if desktop '.png' #elseif mobile '.astc' #end;
 		}
 		recalculateStuffPosition();
 

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="dumbbitch.png"><SubTexture name="dumbbitch idle0000" x="0" y="0" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch idle0001" x="597" y="0" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch idle0002" x="0" y="490" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch idle0003" x="597" y="490" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingLEFT0000" x="1194" y="0" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingLEFT0001" x="1194" y="490" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingRIGHT0000" x="0" y="980" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingRIGHT0001" x="597" y="980" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingUP0000" x="1194" y="980" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingUP0001" x="1791" y="0" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingDOWN0000" x="1791" y="490" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch SingDOWN0001" x="1791" y="980" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch hey0000" x="0" y="1470" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch hey0001" x="597" y="1470" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+<SubTexture name="dumbbitch bruh0000" x="1194" y="1470" width="597" height="490" frameX="0" frameY="0" frameWidth="597" frameHeight="490" />
+</TextureAtlas>

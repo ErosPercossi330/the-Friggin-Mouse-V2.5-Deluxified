@@ -11,7 +11,19 @@ class ChartParser
 		var IMG_WIDTH:Int = 8;
 		var regex:EReg = new EReg("[ \t]*((\r\n)|\r|\n)[ \t]*", "g");
 
-		var csvData = FlxStringUtil.imageToCSV(Paths.file('data/' + songName + '/' + songName + '_section' + section + '.png'));
+		var imagePath:String = '';
+
+		#if mobile
+		if (Paths.fileExists('data/' + songName + '/' + songName + '_section' + section + '.astc', BINARY)) {
+			imagePath = Paths.file('data/' + songName + '/' + songName + '_section' + section + '.astc');
+		} else {
+			imagePath = Paths.file('data/' + songName + '/' + songName + '_section' + section + '.png');
+		}
+		#else
+		imagePath = Paths.file('data/' + songName + '/' + songName + '_section' + section + '.png');
+		#end
+
+		var csvData = FlxStringUtil.imageToCSV(imagePath);
 
 		var lines:Array<String> = regex.split(csvData);
 		var rows:Array<String> = lines.filter(function(line) return line != "");

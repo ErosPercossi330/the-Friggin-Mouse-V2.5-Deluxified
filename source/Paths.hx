@@ -14,8 +14,8 @@ import openfl.utils.Assets as OpenFlAssets;
 import lime.utils.Assets;
 import flixel.FlxSprite;
 #if sys
-import sys.io.File;
-import sys.FileSystem;
+import funk.PsychFile as File;
+import funk.PsychFileSystem as FileSystem;
 #end
 import flixel.graphics.FlxGraphic;
 import openfl.display.BitmapData;
@@ -359,34 +359,81 @@ class Paths
 	// completely rewritten asset loading? fuck!
 	public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
 	public static function returnGraphic(key:String, ?library:String) {
-		#if MODS_ALLOWED
-		var modKey:String = modsImages(key);
-		if(FileSystem.exists(modKey)) {
-			if(!currentTrackedAssets.exists(modKey)) {
-				var newBitmap:BitmapData = BitmapData.fromFile(modKey);
-				var newGraphic:FlxGraphic = FlxGraphic.fromBitmapData(newBitmap, false, modKey);
-				newGraphic.persist = true;
-				currentTrackedAssets.set(modKey, newGraphic);
-			}
-			localTrackedAssets.push(modKey);
-			return currentTrackedAssets.get(modKey);
-		}
-		#end
+        #if MODS_ALLOWED
+        var modKey:String = modsImages(key);
+        if(FileSystem.exists(modKey)) {
+            if(!currentTrackedAssets.exists(modKey)) {
+                var newBitmap:BitmapData = openfl.display.BitmapData.fromFile(modKey);
+                if (newBitmap != null) {
+                    var newGraphic:FlxGraphic = FlxGraphic.fromBitmapData(newBitmap, false, modKey);
+                    newGraphic.persist = true;
+                    currentTrackedAssets.set(modKey, newGraphic);
+                }
+            }
+            localTrackedAssets.push(modKey);
+            return currentTrackedAssets.get(modKey);
+        }
+        #end
 
-		var path = getPath('images/$key.png', IMAGE, library);
-		//trace(path);
-		if (OpenFlAssets.exists(path, IMAGE)) {
-			if(!currentTrackedAssets.exists(path)) {
-				var newGraphic:FlxGraphic = FlxG.bitmap.add(path, false, path);
-				newGraphic.persist = true;
-				currentTrackedAssets.set(path, newGraphic);
-			}
-			localTrackedAssets.push(path);
-			return currentTrackedAssets.get(path);
-		}
-		trace('oh no its returning null NOOOO');
-		return null;
-	}
+        var cleanKey:String = key;
+        if (cleanKey.startsWith("assets/")) cleanKey = cleanKey.substring(7);
+        if (library != null && cleanKey.startsWith(library + "/")) cleanKey = cleanKey.substring(library.length + 1);
+
+        var astcPath = getPath('images/$cleanKey.astc', BINARY, library);
+        var pngPath  = getPath('images/$cleanKey.png', IMAGE, library);
+        var normalAstcPath = getPath('$cleanKey.astc', BINARY, library);
+        var normalPngPath  = getPath('$cleanKey.png', IMAGE, library);
+
+        var defaultAstcPath = getPreloadPath('images/$cleanKey.astc');
+        var defaultPngPath  = getPreloadPath('images/$cleanKey.png');
+        var defaultNormalAstcPath = getPreloadPath('$cleanKey.astc');
+        var defaultNormalPngPath  = getPreloadPath('$cleanKey.png');
+
+        if (OpenFlAssets.exists(pngPath, IMAGE)) return createFlxGraphic(pngPath, IMAGE);
+        if (OpenFlAssets.exists(normalPngPath, IMAGE)) return createFlxGraphic(normalPngPath, IMAGE);
+
+        if (OpenFlAssets.exists(defaultPngPath, IMAGE)) return createFlxGraphic(defaultPngPath, IMAGE);
+        if (OpenFlAssets.exists(defaultNormalPngPath, IMAGE)) return createFlxGraphic(defaultNormalPngPath, IMAGE);
+
+        if (OpenFlAssets.exists(astcPath, BINARY)) return createFlxGraphic(astcPath, BINARY);
+        if (OpenFlAssets.exists(normalAstcPath, BINARY)) return createFlxGraphic(normalAstcPath, BINARY);
+
+        if (OpenFlAssets.exists(defaultAstcPath, BINARY)) return createFlxGraphic(defaultAstcPath, BINARY);
+        if (OpenFlAssets.exists(defaultNormalAstcPath, BINARY)) return createFlxGraphic(defaultNormalAstcPath, BINARY);
+        
+        trace('Asset totally missing - Clean Key: ' + cleanKey + ' (Orig: ' + key + ', Library: ' + library + ')');
+        return null;
+    }
+
+    private static function createFlxGraphic(path:String, type:openfl.utils.AssetType):FlxGraphic {
+    if(!currentTrackedAssets.exists(path)) {
+        var assetBitmap:BitmapData = null;
+
+        if (type == BINARY && haxe.io.Path.extension(path) == 'astc') {
+            try {
+                var bytes = OpenFlAssets.getBytes(path);
+                if (bytes != null) {
+                    var texture = openfl.Lib.current.stage.context3D.createASTCTexture(bytes);
+                    assetBitmap = BitmapData.fromTexture(texture);
+                }
+            } catch(e:Dynamic) {
+                trace('Failed loading hardware ASTC texture: ' + e);
+            }
+        } else {
+            assetBitmap = OpenFlAssets.getBitmapData(path, false);
+        }
+
+        if (assetBitmap != null) {
+            var newGraphic:FlxGraphic = FlxGraphic.fromBitmapData(assetBitmap, false, path);
+            newGraphic.persist = true;
+            currentTrackedAssets.set(path, newGraphic);
+        } else {
+            trace('BitmapData returned null for path: ' + path);
+        }
+    }
+    localTrackedAssets.push(path);
+    return currentTrackedAssets.get(path);
+    }
 
 	public static var currentTrackedSounds:Map<String, Sound> = [];
 	public static function returnSound(path:String, key:String, ?library:String) {
@@ -441,6 +488,10 @@ class Paths
 	}
 
 	inline static public function modsImages(key:String) {
+		var astcCheck:String = modFolders('images/' + key + '.astc');
+		if (FileSystem.exists(astcCheck)) {
+			return astcCheck;
+		}
 		return modFolders('images/' + key + '.png');
 	}
 
@@ -626,7 +677,7 @@ class Paths
 					spriteJson = getTextFromFile('images/$originalPath/spritemap$st.json');
 					if(spriteJson != null)
 					{
-						//trace('found Sprite Json');
+						trace('found Sprite Json');
 						changedImage = true;
 						changedAtlasJson = true;
 						folderOrImg = Paths.image('$originalPath/spritemap$st');
@@ -635,7 +686,14 @@ class Paths
 				}
 				else if(Paths.fileExists('images/$originalPath/spritemap$st.png', IMAGE))
 				{
-					//trace('found Sprite PNG');
+					trace('found Sprite PNG');
+					changedImage = true;
+					folderOrImg = Paths.image('$originalPath/spritemap$st');
+					break;
+				}
+				else if(Paths.fileExists('images/$originalPath/spritemap$st.astc', BINARY))
+				{
+					trace('found Sprite ASTC');
 					changedImage = true;
 					folderOrImg = Paths.image('$originalPath/spritemap$st');
 					break;

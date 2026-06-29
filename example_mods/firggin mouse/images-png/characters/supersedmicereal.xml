@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="supersedmicereal.png"><SubTexture name="supersedmicereal idle0000" x="0" y="0" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal idle0001" x="684" y="0" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal idle0002" x="0" y="647" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal idle0003" x="684" y="647" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingRIGHT0000" x="1368" y="0" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingRIGHT0001" x="1368" y="647" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingLEFT0000" x="0" y="1294" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingLEFT0001" x="684" y="1294" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingUP0000" x="1368" y="1294" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingUP0001" x="2052" y="0" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingDOWN0000" x="2052" y="647" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+<SubTexture name="supersedmicereal SingDOWN0001" x="2052" y="1294" width="684" height="647" frameX="0" frameY="0" frameWidth="684" frameHeight="647" />
+</TextureAtlas>

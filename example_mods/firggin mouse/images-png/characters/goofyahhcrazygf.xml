@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="goofyahhcrazygf.png"><SubTexture name="goofyahhcrazygf idle0000" x="0" y="0" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf idle0001" x="763" y="0" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf idle0002" x="0" y="598" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf idle0003" x="763" y="598" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingRIGHT0000" x="1526" y="0" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingRIGHT0001" x="1526" y="598" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingLEFT0000" x="0" y="1196" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingLEFT0001" x="763" y="1196" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingUP0000" x="1526" y="1196" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingUP0001" x="2289" y="0" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingDOWN0000" x="2289" y="598" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+<SubTexture name="goofyahhcrazygf SingDOWN0001" x="2289" y="1196" width="763" height="598" frameX="0" frameY="0" frameWidth="763" frameHeight="598" />
+</TextureAtlas>

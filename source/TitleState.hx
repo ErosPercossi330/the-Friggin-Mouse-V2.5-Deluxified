@@ -15,8 +15,8 @@ import haxe.Json;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
 #if MODS_ALLOWED
-import sys.FileSystem;
-import sys.io.File;
+import funk.PsychFileSystem as FileSystem;
+import funk.PsychFile as File;
 #end
 import options.GraphicsSettingsSubState;
 //import flixel.graphics.FlxGraphic;
@@ -340,7 +340,7 @@ class TitleState extends MusicBeatState
 			path = SUtil.getStorageDirectory() + "assets/images/titleEnter.png";
 		}
 		//trace(path, FileSystem.exists(path));
-		titleText.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
+		titleText.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path, #if desktop ".png" #elseif mobile ".astc" #end,".xml")));
 		#else
 
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');

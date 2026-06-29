@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginmouseangry_Dialouge.png"><SubTexture name="thefrigginmouseangry_Dialouge talk0000" x="0" y="0" width="238" height="281" frameX="0" frameY="0" frameWidth="238" frameHeight="281" />
+<SubTexture name="thefrigginmouseangry_Dialouge talk0001" x="238" y="0" width="238" height="281" frameX="0" frameY="0" frameWidth="238" frameHeight="281" />
+<SubTexture name="thefrigginmouseangry_Dialouge talk0002" x="476" y="0" width="238" height="281" frameX="0" frameY="0" frameWidth="238" frameHeight="281" />
+</TextureAtlas>

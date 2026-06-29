@@ -107,6 +107,9 @@ class MusicBeatState extends FlxUIState
 
 	#if mobile
         public function addPadCamera() {
+
+		trackedinputsNOTES = controls.trackedinputsNOTES.copy();
+
 		var camcontrol = new flixel.FlxCamera();
 		camcontrol.bgColor.alpha = 0;
 		FlxG.cameras.add(camcontrol, false);

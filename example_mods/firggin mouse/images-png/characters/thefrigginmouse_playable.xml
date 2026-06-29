@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="thefrigginmouse_playable.png"><SubTexture name="thefrigginmouse_playable idle0000" x="0" y="0" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable idle0001" x="555" y="0" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable idle0002" x="1110" y="0" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable idle0003" x="1665" y="0" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingLEFT0000" x="0" y="536" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingLEFT0001" x="555" y="536" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingRIGHT0000" x="1110" y="536" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingRIGHT0001" x="1665" y="536" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingUP0000" x="0" y="1072" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingUP0001" x="555" y="1072" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingDOWN0000" x="1110" y="1072" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable SingDOWN0001" x="1665" y="1072" width="555" height="536" frameX="0" frameY="0" frameWidth="555" frameHeight="536" />
+<SubTexture name="thefrigginmouse_playable MISS0000" x="0" y="1608" width="559" height="538" frameX="0" frameY="0" frameWidth="559" frameHeight="538" />
+<SubTexture name="thefrigginmouse_playable MISS0001" x="559" y="1608" width="559" height="538" frameX="0" frameY="0" frameWidth="559" frameHeight="538" />
+<SubTexture name="thefrigginmouse_playable cheeseballs lol0000" x="1118" y="1608" width="559" height="538" frameX="0" frameY="0" frameWidth="559" frameHeight="538" />
+</TextureAtlas>

@@ -30,8 +30,8 @@ import options.BaseOptionsMenu;
 import options.Option;
 import openfl.Lib;
 import haxe.io.Path;
-import sys.FileSystem;
-import sys.io.File;
+import funk.PsychFileSystem as FileSystem;
+import funk.PsychFile as File;
 
 using StringTools;
 

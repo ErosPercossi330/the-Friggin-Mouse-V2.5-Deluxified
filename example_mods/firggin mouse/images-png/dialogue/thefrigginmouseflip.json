@@ -1,0 +1,24 @@
+{
+	"position": [
+		210,
+		150
+	],
+	"dialogue_pos": "right",
+	"scale": 1.15,
+	"image": "thefrigginmouseflip_Dialouge",
+	"animations": [
+		{
+			"idle_offsets": [
+				260,
+				100
+			],
+			"loop_offsets": [
+				260,
+				100
+			],
+			"anim": "talk",
+			"idle_name": "thefrigginmouseflip_Dialouge talk0000",
+			"loop_name": "thefrigginmouseflip_Dialouge talk"
+		}
+	]
+}

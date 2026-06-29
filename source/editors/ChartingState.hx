@@ -54,8 +54,8 @@ import openfl.utils.ByteArray;
 using StringTools;
 #if sys
 import flash.media.Sound;
-import sys.FileSystem;
-import sys.io.File;
+import funk.PsychFileSystem as FileSystem;
+import funk.PsychFile as File;
 #end
 
 

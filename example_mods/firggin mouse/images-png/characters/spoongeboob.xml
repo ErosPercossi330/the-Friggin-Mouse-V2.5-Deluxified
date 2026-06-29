@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="spoongeboob.png"><SubTexture name="spoongeboob idle0000" x="0" y="0" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob idle0001" x="0" y="400" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob idle0002" x="868" y="0" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob idle0003" x="868" y="400" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingRIGHT0000" x="0" y="800" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingRIGHT0001" x="868" y="800" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingLEFT0000" x="0" y="1200" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingLEFT0001" x="868" y="1200" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingUP0000" x="1736" y="0" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingUP0001" x="1736" y="400" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingDOWN0000" x="1736" y="800" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+<SubTexture name="spoongeboob SingDOWN0001" x="1736" y="1200" width="868" height="400" frameX="0" frameY="0" frameWidth="868" frameHeight="400" />
+</TextureAtlas>

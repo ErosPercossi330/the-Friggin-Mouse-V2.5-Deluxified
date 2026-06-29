@@ -22,7 +22,7 @@ import flixel.addons.display.FlxBackdrop;
 import WeekData;
 import flixel.FlxCamera;
 #if MODS_ALLOWED
-import sys.FileSystem;
+import funk.PsychFileSystem as FileSystem;
 #end
 
 import flixel.addons.ui.FlxInputText;

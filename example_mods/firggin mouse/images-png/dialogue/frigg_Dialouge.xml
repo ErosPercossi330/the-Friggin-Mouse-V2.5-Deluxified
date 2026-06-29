@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="frigg_Dialouge.png"><SubTexture name="frigg_Dialouge talk0000" x="0" y="0" width="205" height="294" frameX="0" frameY="0" frameWidth="205" frameHeight="294" />
+</TextureAtlas>
