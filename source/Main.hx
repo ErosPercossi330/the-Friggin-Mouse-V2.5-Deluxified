@@ -25,8 +25,8 @@ import Discord.DiscordClient;
 import openfl.events.UncaughtErrorEvent;
 import haxe.CallStack;
 import haxe.io.Path;
-import funk.PsychFileSystem as FileSystem;
-import funk.PsychFile as File;
+import sys.FileSystem;
+import sys.io.File;
 import sys.io.Process;
 #end
 
