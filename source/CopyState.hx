@@ -113,7 +113,7 @@ class CopyState extends MusicBeatState
 				if (failedFiles.length > 0)
 				{
 					CoolUtil.showPopUp(failedFiles.join('\n'), 'Failed To Copy ${failedFiles.length} File.');
-					final folder:String = #if mobile SUtil.getStorageDirectory() + #end 'logs/';
+					final folder:String = #if mobile  #end 'logs/';
 					if (!FileSystem.exists(folder))
 						FileSystem.createDirectory(folder);
 					File.saveContent(folder + Date.now().toString().replace(' ', '-').replace(':', "'") + '-CopyState' + '.txt', failedFilesStack.join('\n'));
@@ -155,7 +155,7 @@ class CopyState extends MusicBeatState
 						var path:String = '';
 						#if android
 						if (file.startsWith('mods/'))
-							path = SUtil.getStorageDirectory() + file;
+							path =  file;
 						else
 						#end
 							path = file;
@@ -182,7 +182,7 @@ class CopyState extends MusicBeatState
 		var directory = Path.directory(file);
 		#if android
 		if (fileName.startsWith('mods/'))
-			directory = SUtil.getStorageDirectory() + directory;
+			directory =  directory;
 		#end
 		try
 		{
@@ -238,7 +238,7 @@ class CopyState extends MusicBeatState
 		#if android
 		for (file in locatedFiles)
 			if (file.startsWith('mods/'))
-				locatedFiles = locatedFiles.filter(file -> !FileSystem.exists(SUtil.getStorageDirectory() + file));
+				locatedFiles = locatedFiles.filter(file -> !FileSystem.exists( file));
 		#end
 
 		var filesToRemove:Array<String> = [];

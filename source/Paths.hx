@@ -198,7 +198,7 @@ class Paths
 			return file;
 		}
 		#end
-		return SUtil.getStorageDirectory() + 'assets/videos/$key.$VIDEO_EXT';
+		return 'assets/videos/$key.$VIDEO_EXT';
 	}
 
 	static public function sound(key:String, ?library:String):Sound
