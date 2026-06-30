@@ -27,7 +27,7 @@ class SUtil
 	public static function getStorageDirectory(?force:Bool = false):String
 	{
 		var daPath:String = '';
-		#if android
+		/*#if android
 		if (!FileSystem.exists(rootDir + 'storagetype.txt'))
 			File.saveContent(rootDir + 'storagetype.txt', ClientPrefs.storageType);
 		var curStorageType:String = File.getContent(rootDir + 'storagetype.txt');
@@ -35,7 +35,10 @@ class SUtil
 		daPath = Path.addTrailingSlash(daPath);
 		#elseif ios
 		daPath = LimeSystem.documentsDirectory;
-		#else
+		#else*/
+		#if (android || ios)
+        return '';
+        #else
 		daPath = Sys.getCwd();
 		#end
 
