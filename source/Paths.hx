@@ -245,19 +245,19 @@ class Paths
 		if (!ignoreMods && FileSystem.exists(modFolders(key)))
 			return File.getContent(modFolders(key));
 
-		if (FileSystem.exists(SUtil.getStorageDirectory() + getPreloadPath(key)))
-			return File.getContent(SUtil.getStorageDirectory() + getPreloadPath(key));
+		if (FileSystem.exists(getPreloadPath(key)))
+			return File.getContent(getPreloadPath(key));
 
 		if (currentLevel != null)
 		{
 			var levelPath:String = '';
 			if(currentLevel != 'shared') {
-				levelPath = SUtil.getStorageDirectory() + getLibraryPathForce(key, currentLevel);
+				levelPath = getLibraryPathForce(key, currentLevel);
 				if (FileSystem.exists(levelPath))
 					return File.getContent(levelPath);
 			}
 
-			levelPath = SUtil.getStorageDirectory() + getLibraryPathForce(key, 'shared');
+			levelPath = getLibraryPathForce(key, 'shared');
 			if (FileSystem.exists(levelPath))
 				return File.getContent(levelPath);
 		}
@@ -273,7 +273,7 @@ class Paths
 			return file;
 		}
 		#end
-		return SUtil.getStorageDirectory() + 'assets/fonts/$key';
+		return 'assets/fonts/$key';
 	}
 
 	static public function fileExists(key:String, type:AssetType, ?ignoreMods:Bool = false, ?library:String)
@@ -448,7 +448,7 @@ class Paths
 		}
 		#end
 		// I hate this so god damn much
-		var gottenPath:String = SUtil.getStorageDirectory() + getPath('$path/$key.$SOUND_EXT', SOUND, library);
+		var gottenPath getPath('$path/$key.$SOUND_EXT', SOUND, library);
 		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
 		// trace(gottenPath);
 		if(!currentTrackedSounds.exists(gottenPath))
@@ -468,7 +468,7 @@ class Paths
 
 	#if MODS_ALLOWED
 	inline static public function mods(key:String = '') {
-	    return if (ClientPrefs.Modpack) SUtil.getStorageDirectory() + 'modpack/' + key; else SUtil.getStorageDirectory() + 'mods/' + key;
+	    return if (ClientPrefs.Modpack) 'modpack/' + key; else 'mods/' + key;
 	}
 
 	inline static public function modsFont(key:String) {
@@ -538,7 +538,7 @@ class Paths
 			#end
 		}
 
-		return if (ClientPrefs.Modpack) SUtil.getStorageDirectory() + 'modpack/' + key; else SUtil.getStorageDirectory() + 'mods/' + key;
+		return if (ClientPrefs.Modpack) 'modpack/' + key; else 'mods/' + key;
 	}
 
 	public static var globalMods:Array<String> = [];
