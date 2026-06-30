@@ -52,12 +52,6 @@
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="TITLE_SCREEN_EASTER_EGG" if="officialBuild"/> <!-- DELETE THE if="officialBuild" for enabling this on an unofficial build -->
 	<define name="CRASH_HANDLER" if="desktop release || android || ios" />
-	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
-	<assets path="assets/preload" rename="assets" exclude="*.mp3"  unless="web"/>
-	<section if="TITLE_SCREEN_EASTER_EGG">
-		<assets path="assets/secrets" rename="assets" exclude="*.ogg" if="web"/>
-		<assets path="assets/secrets" rename="assets" exclude="*.mp3"  unless="web"/>
-	</section>
 
 	<!-- DONT ENABLE THIS -->
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
@@ -99,12 +93,14 @@
 	<library name="videos"        preload="true" />
 	<section if="PRELOAD_ALL">
 		<library name="songs"         preload="true" />
-		<library name="shared"        preload="true" />
+		<library name="music"         preload="true" />
+		<library name="sounds"        preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
 		<library name="songs"         preload="false" />
-		<library name="shared"        preload="false" />
+		<library name="music"         preload="false" />
+		<library name="sounds"         preload="false" />
 	</section>
 	
 	<section if="mobile">
@@ -217,8 +213,8 @@
 	<certificate path="key.keystore" password="psychengine" alias="psychport" alias-password="psychengine" />
 
 	<!-- (⁠ ͝⁠°⁠ ͜⁠ʖ͡⁠°⁠) Android Permissions (⁠ ͝⁠°⁠ ͜⁠ʖ͡⁠°⁠) -->
-	<!--<config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/>
-	<!--<config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/>
+	<!--<config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/> -->
+	<!-- <config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/> -->
   <!--<config:android gradle-version="7.5.1" />
   <config:android gradle-plugin="7.3.1" />-->
 

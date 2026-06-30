@@ -436,9 +436,10 @@ class Paths
     }
 
 	public static var currentTrackedSounds:Map<String, Sound> = [];
-	public static function returnSound(path:String, key:String, ?library:String) {
+	public static function returnSound(path:Null<String>, key:String, ?library:String) {
 		#if MODS_ALLOWED
-		var file:String = modsSounds(path, key);
+		var modPath:String = (path != null) ? path : '';
+		var file:String = modsSounds(modPath, key);
 		if(FileSystem.exists(file)) {
 			if(!currentTrackedSounds.exists(file)) {
 				currentTrackedSounds.set(file, Sound.fromFile(file));
@@ -447,21 +448,30 @@ class Paths
 			return currentTrackedSounds.get(file);
 		}
 		#end
-		// I hate this so god damn much
-		var gottenPath:String = getPath('$path/$key.$SOUND_EXT', SOUND, library);
-		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
-		// trace(gottenPath);
-		if(!currentTrackedSounds.exists(gottenPath))
-		#if MODS_ALLOWED
-			currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
-		#else
-		{
-			var folder:String = '';
-			if(path == 'songs') folder = 'songs:';
 
-			currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(folder + getPath('$path/$key.$SOUND_EXT', SOUND, library)));
+		var gottenPath:String = (path != null) ? '$path/$key.$SOUND_EXT' : '$key.$SOUND_EXT';
+		gottenPath = getPath(gottenPath, SOUND, library);
+		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
+
+		if(!currentTrackedSounds.exists(gottenPath)) {
+		#if desktop
+		currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
+		#else
+		var folder:String = '';
+		if (path == 'songs' || library == 'songs') {
+			folder = 'songs:';
+		} else if (path == 'music' || library == 'music') {
+			folder = 'music:';
+		} else if (path == 'sounds' || library == 'sounds') {
+			folder = 'sounds:';
+		} else if (library != null && library != 'preload' && library != 'default') {
+			folder = '$library:';
 		}
+
+		var assetPath:String = (path != null) ? '$path/$key.$SOUND_EXT' : '$key.$SOUND_EXT';
+		currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(folder + getPath(assetPath, SOUND, library)));
 		#end
+		}
 		localTrackedAssets.push(gottenPath);
 		return currentTrackedSounds.get(gottenPath);
 	}
