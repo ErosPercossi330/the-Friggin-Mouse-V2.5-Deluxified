@@ -12,10 +12,6 @@ import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import lime.app.Application;
 
-#if mobile
-import CopyState;
-#end
-
 #if desktop
 import Discord.DiscordClient;
 #end
