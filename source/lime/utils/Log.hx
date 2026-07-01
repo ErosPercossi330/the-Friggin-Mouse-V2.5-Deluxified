@@ -36,11 +36,11 @@ class Log
 
 			if (throwErrors)
 			{
-                                if (!FileSystem.exists(SUtil.getStorageDirectory() + 'logs'))
-					FileSystem.createDirectory(SUtil.getStorageDirectory() + 'logs');
+                                if (!FileSystem.exists('logs'))
+					FileSystem.createDirectory('logs');
 
-				File.saveContent(SUtil.getStorageDirectory()
-					+ 'logs/'
+				File.saveContent(
+					'logs/'
 					+ Lib.application.meta.get('file')
 					+ '-'
 					+ Date.now().toString().replace(' ', '-').replace(':', "'")
