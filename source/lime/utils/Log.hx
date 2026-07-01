@@ -39,7 +39,7 @@ class Log
                     if (!FileSystem.exists( #if android lime.system.System.applicationStorageDirectory + #elseif ios lime.system.System.documentsDirectory + #end 'logs'))
 					FileSystem.createDirectory(#if android lime.system.System.applicationStorageDirectory + #elseif ios lime.system.System.documentsDirectory + #end 'logs');
 
-				File.saveContent(#if android lime.system.System.applicationStorageDirectory + #elseif ios lime.system.System.documentsDirectory + #end 
+				File.saveContent(#if android lime.system.System.applicationStorageDirectory #elseif ios lime.system.System.documentsDirectory #end 
 					+'logs/'
 					+ Lib.application.meta.get('file')
 					+ '-'
