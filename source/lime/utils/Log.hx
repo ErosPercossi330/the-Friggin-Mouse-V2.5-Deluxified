@@ -32,7 +32,7 @@ class Log
 	{
 		if (level >= LogLevel.ERROR)
 		{
-			var message = "[" + info.className + "] ERROR: " + message;
+			var messageStr = "[" + info.className + "] ERROR: " + message;
 
 			if (throwErrors)
 			{
