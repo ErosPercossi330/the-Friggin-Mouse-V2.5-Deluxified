@@ -36,27 +36,39 @@ class Log
 
 			if (throwErrors)
 			{
-                    if (!FileSystem.exists( #if android lime.system.System.applicationStorageDirectory + #elseif ios lime.system.System.documentsDirectory + #end 'logs'))
-					FileSystem.createDirectory(#if android lime.system.System.applicationStorageDirectory + #elseif ios lime.system.System.documentsDirectory + #end 'logs');
+				var logDir:String = "";
+				#if android
+				logDir = lime.system.System.applicationStorageDirectory;
+				#elseif ios
+				logDir = lime.system.System.documentsDirectory;
+				#end
 
-				File.saveContent(#if android lime.system.System.applicationStorageDirectory #elseif ios lime.system.System.documentsDirectory #end 
-					+'logs/'
-					+ Lib.application.meta.get('file')
+				if (logDir != "" && !logDir.endsWith("/")) {
+					logDir += "/";
+				}
+				
+				var fullLogPath = logDir + 'logs/';
+
+				if (!FileSystem.exists(fullLogPath)) {
+					FileSystem.createDirectory(fullLogPath);
+				}
+
+				var fileName:String = Lib.application.meta.get('file')
 					+ '-'
-					+ Date.now().toString().replace(' ', '-').replace(':', "'")
-					+ '.log',
-					message
-					+ '\n');
+					+ Date.now().toString().split(' ').join('-').split(':').join("'")
+					+ '.log';
 
-                                Lib.application.window.alert(message, 'Error!');
-				throw message;
+				File.saveContent(fullLogPath + fileName, messageStr + '\n');
+
+				Lib.application.window.alert(messageStr, 'Error!');
+				throw messageStr;
 			}
 			else
 			{
 				#if js
-				untyped #if haxe4 js.Syntax.code #else __js__ #end ("console").error(message);
+				untyped #if haxe4 js.Syntax.code #else __js__ #end ("console").error(messageStr);
 				#else
-				println(message);
+				println(messageStr);
 				#end
 			}
 		}
