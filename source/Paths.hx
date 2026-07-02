@@ -454,24 +454,28 @@ class Paths
 		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
 
 		if(!currentTrackedSounds.exists(gottenPath)) {
-		#if desktop
-		currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
-		#else
-		var folder:String = '';
-		if (path == 'songs' || library == 'songs') {
-			folder = 'songs:';
-		} else if (path == 'music' || library == 'music') {
-			folder = 'music:';
-		} else if (path == 'sounds' || library == 'sounds') {
-			folder = 'sounds:';
-		} else if (library != null && library != 'preload' && library != 'default') {
-			folder = '$library:';
-		}
+        #if desktop
+        currentTrackedSounds.set(gottenPath, Sound.fromFile(gottenPath));
+        #else
+        var folder:String = '';
+        if (path == 'songs' || library == 'songs') {
+            folder = 'songs:';
+        } else if (path == 'music' || library == 'music') {
+            folder = 'music:';
+        } else if (path == 'sounds' || library == 'sounds') {
+            folder = 'sounds:';
+        }
 
-		var assetPath:String = (path != null) ? '$path/$key.$SOUND_EXT' : '$key.$SOUND_EXT';
-		currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(folder + getPath(assetPath, SOUND, library)));
-		#end
-		}
+        var assetPath:String = (path != null) ? '$path/$key.$SOUND_EXT' : '$key.$SOUND_EXT';
+        var finalSearchPath:String = folder + getPath(assetPath, SOUND, library);
+
+        if (!OpenFlAssets.exists(finalSearchPath, SOUND)) {
+            finalSearchPath = 'assets/' + assetPath; 
+        }
+
+        currentTrackedSounds.set(gottenPath, OpenFlAssets.getSound(finalSearchPath));
+        #end
+    	}
 		localTrackedAssets.push(gottenPath);
 		return currentTrackedSounds.get(gottenPath);
 	}
@@ -529,9 +533,9 @@ class Paths
 
 	static public function modFolders(key:String) {
 		if(currentModDirectory != null && currentModDirectory.length > 0) {
-			var fileToCheck:String = mods(currentModDirectory + '/' + key);
-			if(FileSystem.exists(fileToCheck))
-				return fileToCheck;
+			var fileToCheck:String = 'mods/' + currentModDirectory + '/' + key;
+        	if(FileSystem.exists(fileToCheck)) {
+            	return fileToCheck;
 			#if (android || linux || ios)
 			else if (FileSystem.exists(findFile(key)))
 				return fileToCheck;
@@ -539,9 +543,9 @@ class Paths
 		}
 
 		for(mod in getGlobalMods()){
-			var fileToCheck:String = mods(mod + '/' + key);
-			if(FileSystem.exists(fileToCheck))
-				return fileToCheck;
+			var fileToCheck:String = 'mods/' + mod + '/' + key;
+        	if(FileSystem.exists(fileToCheck))
+            	return fileToCheck;
 			#if (android || linux || ios)
 			else if (FileSystem.exists(findFile(fileToCheck))) 
 				return fileToCheck;
