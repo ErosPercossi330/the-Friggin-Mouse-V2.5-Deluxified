@@ -534,7 +534,7 @@ class Paths
 	static public function modFolders(key:String) {
 		if(currentModDirectory != null && currentModDirectory.length > 0) {
 			var fileToCheck:String = 'mods/' + currentModDirectory + '/' + key;
-        	if(FileSystem.exists(fileToCheck)) {
+        	if(FileSystem.exists(fileToCheck))
             	return fileToCheck;
 			#if (android || linux || ios)
 			else if (FileSystem.exists(findFile(key)))
